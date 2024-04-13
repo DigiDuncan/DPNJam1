@@ -1,8 +1,6 @@
-[gd_scene load_steps=15 format=3 uid="uid://lqhis24b5sgv"]
+[gd_scene load_steps=14 format=3 uid="uid://lqhis24b5sgv"]
 
 [ext_resource type="Texture2D" uid="uid://dj08t07ghfl0g" path="res://Background.png" id="1_58v8u"]
-[ext_resource type="Texture2D" uid="uid://byds4dsytdlv1" path="res://monsters/water.png" id="2_3oigu"]
-[ext_resource type="Texture2D" uid="uid://nuaumc2imy86" path="res://monsters/fire.png" id="3_kvmv6"]
 [ext_resource type="Texture2D" uid="uid://cb6h41cpg70qo" path="res://Book.png" id="4_lwicp"]
 [ext_resource type="Texture2D" uid="uid://cj4vqmliislrk" path="res://elements/watericon.png" id="5_tctlc"]
 [ext_resource type="Texture2D" uid="uid://tpxwlury1onf" path="res://elements/fireicon.png" id="6_aa5qn"]
@@ -13,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dbtgkbwg7pcrh" path="res://elements/lighticon.png" id="11_toog1"]
 [ext_resource type="Texture2D" uid="uid://cb2utf25sq0vn" path="res://elements/airicon.png" id="12_bawuo"]
 [ext_resource type="Texture2D" uid="uid://bjm72braku48" path="res://elements/rockicon.png" id="13_c8x3t"]
+[ext_resource type="PackedScene" uid="uid://ctxc1m7lpbl87" path="res://monster.tscn" id="13_tp38n"]
 [ext_resource type="Texture2D" uid="uid://dh6lpagrpmevo" path="res://elements/natureicon.png" id="14_kuy1i"]
 
 [node name="Everything" type="Node2D"]
@@ -72,28 +71,7 @@ texture = ExtResource("14_kuy1i")
 
 [node name="Monsters" type="Node2D" parent="."]
 
-[node name="EnemyMonster" type="Node2D" parent="Monsters"]
-position = Vector2(647, 620)
+[node name="EnemyMonster" parent="Monsters" instance=ExtResource("13_tp38n")]
 
-[node name="Water" type="Sprite2D" parent="Monsters/EnemyMonster"]
-position = Vector2(3, -517)
-scale = Vector2(0.75, 0.75)
-texture = ExtResource("2_3oigu")
-
-[node name="Fire" type="Sprite2D" parent="Monsters/EnemyMonster"]
-position = Vector2(13, -533)
-scale = Vector2(0.75, 0.75)
-texture = ExtResource("3_kvmv6")
-
-[node name="AllyMonster" type="Node2D" parent="Monsters"]
-position = Vector2(1294, 1240)
-
-[node name="Water" type="Sprite2D" parent="Monsters/AllyMonster"]
-position = Vector2(-656, -610)
-scale = Vector2(0.75, 0.75)
-texture = ExtResource("2_3oigu")
-
-[node name="Fire" type="Sprite2D" parent="Monsters/AllyMonster"]
-position = Vector2(-645, -612)
-scale = Vector2(0.75, 0.75)
-texture = ExtResource("3_kvmv6")
+[node name="AllyMonster" parent="Monsters" instance=ExtResource("13_tp38n")]
+position = Vector2(645, 1135)
