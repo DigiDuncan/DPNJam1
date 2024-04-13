@@ -1,6 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://lqhis24b5sgv"]
+[gd_scene load_steps=16 format=3 uid="uid://lqhis24b5sgv"]
 
 [ext_resource type="Texture2D" uid="uid://dj08t07ghfl0g" path="res://Background.png" id="1_58v8u"]
+[ext_resource type="Script" path="res://GameManager.gd" id="1_uu1go"]
 [ext_resource type="Texture2D" uid="uid://cb6h41cpg70qo" path="res://Book.png" id="4_lwicp"]
 [ext_resource type="Texture2D" uid="uid://cj4vqmliislrk" path="res://elements/watericon.png" id="5_tctlc"]
 [ext_resource type="Texture2D" uid="uid://tpxwlury1onf" path="res://elements/fireicon.png" id="6_aa5qn"]
@@ -16,6 +17,9 @@
 [ext_resource type="Script" path="res://Monster.gd" id="14_x2cdo"]
 
 [node name="Everything" type="Node2D"]
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("1_uu1go")
 
 [node name="Fightzone" type="TextureRect" parent="."]
 offset_right = 251.0

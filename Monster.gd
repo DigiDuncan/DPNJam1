@@ -1,5 +1,5 @@
 @tool
-extends Sprite2D
+class_name Monster extends Sprite2D
 
 enum MonsterType {POISON, FIRE, WATER, ICE, LIGHTNING, DARK, LIGHT, WIND, ROCK, NATURE}
 
