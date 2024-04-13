@@ -130,4 +130,3 @@ texture = ExtResource("13_ot1gd")
 hframes = 10
 vframes = 10
 script = ExtResource("14_x2cdo")
-primary_type = 3
