@@ -22,8 +22,15 @@ func _ready():
 	primary_type = primary_type
 	secondary_type = secondary_type
 	self.change_sprite()
+	
 
+func random_enemy():
+	primary_type = MonsterType.values()[randi() % MonsterType.size()]
+	secondary_type = MonsterType.values()[randi() % MonsterType.size()]
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+func _on_button_pressed():
+	random_enemy()

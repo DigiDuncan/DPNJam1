@@ -146,3 +146,12 @@ texture = ExtResource("13_ot1gd")
 hframes = 10
 vframes = 10
 script = ExtResource("14_x2cdo")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 750.0
+offset_top = 62.0
+offset_right = 995.0
+offset_bottom = 151.0
+text = "random enemy"
+
+[connection signal="pressed" from="Button" to="Monsters/EnemyMonster" method="_on_button_pressed"]
