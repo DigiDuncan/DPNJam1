@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://lqhis24b5sgv"]
+[gd_scene load_steps=15 format=3 uid="uid://lqhis24b5sgv"]
 
 [ext_resource type="Texture2D" uid="uid://dj08t07ghfl0g" path="res://Background.png" id="1_58v8u"]
 [ext_resource type="Texture2D" uid="uid://byds4dsytdlv1" path="res://water.png" id="2_3oigu"]
@@ -14,7 +14,6 @@
 [ext_resource type="Texture2D" uid="uid://cb2utf25sq0vn" path="res://airicon.png" id="12_bawuo"]
 [ext_resource type="Texture2D" uid="uid://bjm72braku48" path="res://rockicon.png" id="13_c8x3t"]
 [ext_resource type="Texture2D" uid="uid://dh6lpagrpmevo" path="res://natureicon.png" id="14_kuy1i"]
-[ext_resource type="Texture2D" uid="uid://2prqaw10jhv" path="res://cursor.png" id="15_pxmsi"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -45,48 +44,44 @@ position = Vector2(299, 480)
 [node name="Sprite2D" type="Sprite2D" parent="Book"]
 texture = ExtResource("4_lwicp")
 
-[node name="BookIcons" type="Node" parent="."]
+[node name="BookIcons" type="Node" parent="Book"]
 
-[node name="Water" type="Sprite2D" parent="BookIcons"]
+[node name="Water" type="Sprite2D" parent="Book/BookIcons"]
 position = Vector2(127, 344)
 texture = ExtResource("5_tctlc")
 
-[node name="Fire" type="Sprite2D" parent="BookIcons"]
+[node name="Fire" type="Sprite2D" parent="Book/BookIcons"]
 position = Vector2(232, 346)
 texture = ExtResource("6_aa5qn")
 
-[node name="Poison" type="Sprite2D" parent="BookIcons"]
+[node name="Poison" type="Sprite2D" parent="Book/BookIcons"]
 position = Vector2(130, 425)
 texture = ExtResource("7_cvagm")
 
-[node name="Ice" type="Sprite2D" parent="BookIcons"]
+[node name="Ice" type="Sprite2D" parent="Book/BookIcons"]
 position = Vector2(228, 421)
 texture = ExtResource("8_6cx3j")
 
-[node name="Lightning" type="Sprite2D" parent="BookIcons"]
+[node name="Lightning" type="Sprite2D" parent="Book/BookIcons"]
 position = Vector2(126, 511)
 texture = ExtResource("9_ciebk")
 
-[node name="Dark" type="Sprite2D" parent="BookIcons"]
+[node name="Dark" type="Sprite2D" parent="Book/BookIcons"]
 position = Vector2(231, 515)
 texture = ExtResource("10_t17au")
 
-[node name="Light" type="Sprite2D" parent="BookIcons"]
+[node name="Light" type="Sprite2D" parent="Book/BookIcons"]
 position = Vector2(134, 597)
 texture = ExtResource("11_toog1")
 
-[node name="Wind" type="Sprite2D" parent="BookIcons"]
+[node name="Wind" type="Sprite2D" parent="Book/BookIcons"]
 position = Vector2(233, 596)
 texture = ExtResource("12_bawuo")
 
-[node name="Rock" type="Sprite2D" parent="BookIcons"]
+[node name="Rock" type="Sprite2D" parent="Book/BookIcons"]
 position = Vector2(130, 677)
 texture = ExtResource("13_c8x3t")
 
-[node name="Nature" type="Sprite2D" parent="BookIcons"]
+[node name="Nature" type="Sprite2D" parent="Book/BookIcons"]
 position = Vector2(224, 679)
 texture = ExtResource("14_kuy1i")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(643, 366)
-texture = ExtResource("15_pxmsi")
