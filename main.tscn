@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://lqhis24b5sgv"]
+[gd_scene load_steps=15 format=3 uid="uid://lqhis24b5sgv"]
 
 [ext_resource type="Texture2D" uid="uid://dj08t07ghfl0g" path="res://Background.png" id="1_58v8u"]
 [ext_resource type="Texture2D" uid="uid://cb6h41cpg70qo" path="res://Book.png" id="4_lwicp"]
@@ -11,8 +11,9 @@
 [ext_resource type="Texture2D" uid="uid://dbtgkbwg7pcrh" path="res://elements/lighticon.png" id="11_toog1"]
 [ext_resource type="Texture2D" uid="uid://cb2utf25sq0vn" path="res://elements/airicon.png" id="12_bawuo"]
 [ext_resource type="Texture2D" uid="uid://bjm72braku48" path="res://elements/rockicon.png" id="13_c8x3t"]
-[ext_resource type="PackedScene" uid="uid://ctxc1m7lpbl87" path="res://monster.tscn" id="13_tp38n"]
+[ext_resource type="Texture2D" uid="uid://gvta1pp0vepk" path="res://monster_sheet.png" id="13_ot1gd"]
 [ext_resource type="Texture2D" uid="uid://dh6lpagrpmevo" path="res://elements/natureicon.png" id="14_kuy1i"]
+[ext_resource type="Script" path="res://Monster.gd" id="14_x2cdo"]
 
 [node name="Everything" type="Node2D"]
 
@@ -25,53 +26,108 @@ texture = ExtResource("1_58v8u")
 position = Vector2(299, 480)
 
 [node name="BookBackground" type="Sprite2D" parent="Book"]
+position = Vector2(11, -8)
 texture = ExtResource("4_lwicp")
 
 [node name="BookIcons" type="Node2D" parent="Book"]
 
-[node name="Water" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(-162, -134)
+[node name="Water" type="TextureRect" parent="Book/BookIcons"]
+offset_left = -189.0
+offset_top = -181.0
+offset_right = -133.0
+offset_bottom = -119.0
+tooltip_text = "Water"
 texture = ExtResource("5_tctlc")
 
-[node name="Fire" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(-57, -132)
+[node name="Fire" type="TextureRect" parent="Book/BookIcons"]
+offset_left = -81.0
+offset_top = -182.0
+offset_right = -11.0
+offset_bottom = -120.0
+tooltip_text = "Fire"
 texture = ExtResource("6_aa5qn")
 
-[node name="Poison" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(-159, -53)
+[node name="Poison" type="TextureRect" parent="Book/BookIcons"]
+offset_left = -194.0
+offset_top = -100.0
+offset_right = -124.0
+offset_bottom = -38.0
+tooltip_text = "Poison"
 texture = ExtResource("7_cvagm")
 
-[node name="Ice" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(-61, -57)
+[node name="Ice" type="TextureRect" parent="Book/BookIcons"]
+offset_left = -84.0
+offset_top = -104.0
+offset_right = -14.0
+offset_bottom = -42.0
+tooltip_text = "Ice"
 texture = ExtResource("8_6cx3j")
 
-[node name="Lightning" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(-163, 33)
+[node name="Lightning" type="TextureRect" parent="Book/BookIcons"]
+offset_left = -200.0
+offset_top = -27.0
+offset_right = -130.0
+offset_bottom = 57.0
+tooltip_text = "Lightning"
 texture = ExtResource("9_ciebk")
 
-[node name="Dark" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(-58, 37)
+[node name="Dark" type="TextureRect" parent="Book/BookIcons"]
+offset_left = -100.0
+offset_top = -26.0
+offset_right = 2.0
+offset_bottom = 58.0
+tooltip_text = "Dark"
 texture = ExtResource("10_t17au")
 
-[node name="Light" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(-155, 119)
+[node name="Light" type="TextureRect" parent="Book/BookIcons"]
+offset_left = -188.0
+offset_top = 73.0
+offset_right = -130.0
+offset_bottom = 143.0
+tooltip_text = "Light"
 texture = ExtResource("11_toog1")
 
-[node name="Wind" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(-56, 118)
+[node name="Wind" type="TextureRect" parent="Book/BookIcons"]
+offset_left = -88.0
+offset_top = 65.0
+offset_right = -3.0
+offset_bottom = 135.0
+tooltip_text = "Wind"
 texture = ExtResource("12_bawuo")
 
-[node name="Rock" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(-159, 199)
+[node name="Rock" type="TextureRect" parent="Book/BookIcons"]
+offset_left = -184.0
+offset_top = 162.0
+offset_right = -111.0
+offset_bottom = 217.0
+tooltip_text = "Rock"
 texture = ExtResource("13_c8x3t")
 
-[node name="Nature" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(-65, 201)
+[node name="Nature" type="TextureRect" parent="Book/BookIcons"]
+offset_left = -78.0
+offset_top = 158.0
+offset_right = -5.0
+offset_bottom = 220.0
+tooltip_text = "Nature"
 texture = ExtResource("14_kuy1i")
 
 [node name="Monsters" type="Node2D" parent="."]
 
-[node name="EnemyMonster" parent="Monsters" instance=ExtResource("13_tp38n")]
+[node name="EnemyMonster" type="Sprite2D" parent="Monsters"]
+texture_filter = 1
+position = Vector2(638, 105)
+scale = Vector2(2, 2)
+texture = ExtResource("13_ot1gd")
+hframes = 10
+vframes = 10
+script = ExtResource("14_x2cdo")
 
-[node name="AllyMonster" parent="Monsters" instance=ExtResource("13_tp38n")]
-position = Vector2(645, 1135)
+[node name="AllyMonster" type="Sprite2D" parent="Monsters"]
+texture_filter = 1
+position = Vector2(638, 632)
+scale = Vector2(2, 2)
+texture = ExtResource("13_ot1gd")
+hframes = 10
+vframes = 10
+script = ExtResource("14_x2cdo")
+primary_type = 3
