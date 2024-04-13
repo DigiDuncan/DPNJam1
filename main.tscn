@@ -31,43 +31,43 @@ texture = ExtResource("4_lwicp")
 [node name="BookIcons" type="Node2D" parent="Book"]
 
 [node name="Water" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(127, 344)
+position = Vector2(-162, -134)
 texture = ExtResource("5_tctlc")
 
 [node name="Fire" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(232, 346)
+position = Vector2(-57, -132)
 texture = ExtResource("6_aa5qn")
 
 [node name="Poison" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(130, 425)
+position = Vector2(-159, -53)
 texture = ExtResource("7_cvagm")
 
 [node name="Ice" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(228, 421)
+position = Vector2(-61, -57)
 texture = ExtResource("8_6cx3j")
 
 [node name="Lightning" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(126, 511)
+position = Vector2(-163, 33)
 texture = ExtResource("9_ciebk")
 
 [node name="Dark" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(231, 515)
+position = Vector2(-58, 37)
 texture = ExtResource("10_t17au")
 
 [node name="Light" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(134, 597)
+position = Vector2(-155, 119)
 texture = ExtResource("11_toog1")
 
 [node name="Wind" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(233, 596)
+position = Vector2(-56, 118)
 texture = ExtResource("12_bawuo")
 
 [node name="Rock" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(130, 677)
+position = Vector2(-159, 199)
 texture = ExtResource("13_c8x3t")
 
 [node name="Nature" type="Sprite2D" parent="Book/BookIcons"]
-position = Vector2(224, 679)
+position = Vector2(-65, 201)
 texture = ExtResource("14_kuy1i")
 
 [node name="Monsters" type="Node2D" parent="."]
