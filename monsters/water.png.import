@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbtgkbwg7pcrh"
-path="res://.godot/imported/lighticon.png-0510e1ab136e521a37ab2a92be48772a.ctex"
+uid="uid://byds4dsytdlv1"
+path="res://.godot/imported/water.png-fcac463e5900e7d6bf7e35b20a040d2e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://lighticon.png"
-dest_files=["res://.godot/imported/lighticon.png-0510e1ab136e521a37ab2a92be48772a.ctex"]
+source_file="res://monsters/water.png"
+dest_files=["res://.godot/imported/water.png-fcac463e5900e7d6bf7e35b20a040d2e.ctex"]
 
 [params]
 

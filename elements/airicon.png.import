@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcukh1ahepkn3"
-path="res://.godot/imported/poisonicon.png-b279c1064511c26e0062e02aec760cde.ctex"
+uid="uid://cb2utf25sq0vn"
+path="res://.godot/imported/airicon.png-cd63c7be605063f98ca76842e7b135ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://poisonicon.png"
-dest_files=["res://.godot/imported/poisonicon.png-b279c1064511c26e0062e02aec760cde.ctex"]
+source_file="res://elements/airicon.png"
+dest_files=["res://.godot/imported/airicon.png-cd63c7be605063f98ca76842e7b135ee.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://du64giuklq70p"
-path="res://.godot/imported/iceicon.png-7cb591f0fbe478eab61a2590901e7c3a.ctex"
+uid="uid://dh6lpagrpmevo"
+path="res://.godot/imported/natureicon.png-d1aa8b8ad6509a9a9fbf84ff9c5107f5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://iceicon.png"
-dest_files=["res://.godot/imported/iceicon.png-7cb591f0fbe478eab61a2590901e7c3a.ctex"]
+source_file="res://elements/natureicon.png"
+dest_files=["res://.godot/imported/natureicon.png-d1aa8b8ad6509a9a9fbf84ff9c5107f5.ctex"]
 
 [params]
 

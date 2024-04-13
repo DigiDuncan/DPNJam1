@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfh7y8y4wxuqf"
-path="res://.godot/imported/darkicon.png-a2d67e354b9d8c1fe259088441d1763a.ctex"
+path="res://.godot/imported/darkicon.png-3c3cb72971c12ea5857ac409f4140add.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://darkicon.png"
-dest_files=["res://.godot/imported/darkicon.png-a2d67e354b9d8c1fe259088441d1763a.ctex"]
+source_file="res://elements/darkicon.png"
+dest_files=["res://.godot/imported/darkicon.png-3c3cb72971c12ea5857ac409f4140add.ctex"]
 
 [params]
 

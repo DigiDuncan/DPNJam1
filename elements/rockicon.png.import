@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cb2utf25sq0vn"
-path="res://.godot/imported/airicon.png-d1cc7d637f90290b7c7bcb0ec8b061ce.ctex"
+uid="uid://bjm72braku48"
+path="res://.godot/imported/rockicon.png-92a554f3d0f824842e32854c519da88e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://airicon.png"
-dest_files=["res://.godot/imported/airicon.png-d1cc7d637f90290b7c7bcb0ec8b061ce.ctex"]
+source_file="res://elements/rockicon.png"
+dest_files=["res://.godot/imported/rockicon.png-92a554f3d0f824842e32854c519da88e.ctex"]
 
 [params]
 
