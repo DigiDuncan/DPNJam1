@@ -15,36 +15,20 @@
 [ext_resource type="Texture2D" uid="uid://bjm72braku48" path="res://rockicon.png" id="13_c8x3t"]
 [ext_resource type="Texture2D" uid="uid://dh6lpagrpmevo" path="res://natureicon.png" id="14_kuy1i"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Everything" type="Node2D"]
 
 [node name="Fightzone" type="TextureRect" parent="."]
 offset_right = 251.0
 offset_bottom = 227.0
 texture = ExtResource("1_58v8u")
 
-[node name="WaterElemental" type="CharacterBody2D" parent="."]
-position = Vector2(647, 620)
-
-[node name="Sprite2D" type="Sprite2D" parent="WaterElemental"]
-position = Vector2(-2, 2)
-scale = Vector2(0.75, 0.75)
-texture = ExtResource("2_3oigu")
-
-[node name="FireElemental" type="CharacterBody2D" parent="."]
-position = Vector2(658, 88)
-
-[node name="Sprite2D" type="Sprite2D" parent="FireElemental"]
-position = Vector2(2, -1)
-scale = Vector2(0.75, 0.75)
-texture = ExtResource("3_kvmv6")
-
-[node name="Book" type="CharacterBody2D" parent="."]
+[node name="Book" type="Node2D" parent="."]
 position = Vector2(299, 480)
 
-[node name="Sprite2D" type="Sprite2D" parent="Book"]
+[node name="BookBackground" type="Sprite2D" parent="Book"]
 texture = ExtResource("4_lwicp")
 
-[node name="BookIcons" type="Node" parent="Book"]
+[node name="BookIcons" type="Node2D" parent="Book"]
 
 [node name="Water" type="Sprite2D" parent="Book/BookIcons"]
 position = Vector2(127, 344)
@@ -85,3 +69,31 @@ texture = ExtResource("13_c8x3t")
 [node name="Nature" type="Sprite2D" parent="Book/BookIcons"]
 position = Vector2(224, 679)
 texture = ExtResource("14_kuy1i")
+
+[node name="Monsters" type="Node2D" parent="."]
+
+[node name="EnemyMonster" type="Node2D" parent="Monsters"]
+position = Vector2(647, 620)
+
+[node name="Water" type="Sprite2D" parent="Monsters/EnemyMonster"]
+position = Vector2(3, -517)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_3oigu")
+
+[node name="Fire" type="Sprite2D" parent="Monsters/EnemyMonster"]
+position = Vector2(13, -533)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("3_kvmv6")
+
+[node name="AllyMonster" type="Node2D" parent="Monsters"]
+position = Vector2(1294, 1240)
+
+[node name="Water" type="Sprite2D" parent="Monsters/AllyMonster"]
+position = Vector2(-656, -610)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_3oigu")
+
+[node name="Fire" type="Sprite2D" parent="Monsters/AllyMonster"]
+position = Vector2(-645, -612)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("3_kvmv6")
