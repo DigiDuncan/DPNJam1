@@ -4,17 +4,17 @@
 [ext_resource type="Script" path="res://GameManager.gd" id="1_uu1go"]
 [ext_resource type="Script" path="res://Book.gd" id="3_mg51g"]
 [ext_resource type="Texture2D" uid="uid://cb6h41cpg70qo" path="res://Book.png" id="4_lwicp"]
-[ext_resource type="Texture2D" uid="uid://cj4vqmliislrk" path="res://elements/watericon.png" id="5_tctlc"]
-[ext_resource type="Texture2D" uid="uid://tpxwlury1onf" path="res://elements/fireicon.png" id="6_aa5qn"]
-[ext_resource type="Texture2D" uid="uid://bcukh1ahepkn3" path="res://elements/poisonicon.png" id="7_cvagm"]
-[ext_resource type="Texture2D" uid="uid://du64giuklq70p" path="res://elements/iceicon.png" id="8_6cx3j"]
-[ext_resource type="Texture2D" uid="uid://cg6ugs2rf4ibt" path="res://elements/lightningicon.png" id="9_ciebk"]
-[ext_resource type="Texture2D" uid="uid://bfh7y8y4wxuqf" path="res://elements/darkicon.png" id="10_t17au"]
-[ext_resource type="Texture2D" uid="uid://dbtgkbwg7pcrh" path="res://elements/lighticon.png" id="11_toog1"]
-[ext_resource type="Texture2D" uid="uid://cb2utf25sq0vn" path="res://elements/airicon.png" id="12_bawuo"]
-[ext_resource type="Texture2D" uid="uid://bjm72braku48" path="res://elements/rockicon.png" id="13_c8x3t"]
+[ext_resource type="Texture2D" uid="uid://2h3h37gjj35" path="res://WaterElement.svg" id="5_vawco"]
+[ext_resource type="Texture2D" uid="uid://c3ftyfyvhrwqa" path="res://FireElement.svg" id="6_4hehq"]
+[ext_resource type="Texture2D" uid="uid://ckteu2d0rbyiu" path="res://PoisonElement.svg" id="7_7mgl6"]
+[ext_resource type="Texture2D" uid="uid://bbuiuv83176r7" path="res://IceElement.svg" id="8_co2ta"]
+[ext_resource type="Texture2D" uid="uid://scpjke6g8eig" path="res://LightningElement.svg" id="9_2vxao"]
+[ext_resource type="Texture2D" uid="uid://bhr1fdcwslj8f" path="res://DarkElement.svg" id="10_xtao3"]
+[ext_resource type="Texture2D" uid="uid://bibyb1ne2cs75" path="res://LightElement.svg" id="11_od36y"]
+[ext_resource type="Texture2D" uid="uid://dq4552f438fqb" path="res://WindElement.svg" id="12_ddr0i"]
+[ext_resource type="Texture2D" uid="uid://cwgmg6p1pc037" path="res://RockElement.svg" id="13_0l11p"]
 [ext_resource type="Texture2D" uid="uid://gvta1pp0vepk" path="res://monster_sheet.png" id="13_ot1gd"]
-[ext_resource type="Texture2D" uid="uid://dh6lpagrpmevo" path="res://elements/natureicon.png" id="14_kuy1i"]
+[ext_resource type="Texture2D" uid="uid://bswbneyam7s55" path="res://NatureElement.svg" id="14_ukgwx"]
 [ext_resource type="Script" path="res://Monster.gd" id="14_x2cdo"]
 
 [node name="Everything" type="Node2D"]
@@ -38,84 +38,94 @@ texture = ExtResource("4_lwicp")
 [node name="BookIcons" type="Node2D" parent="Book"]
 
 [node name="WATER" type="TextureRect" parent="Book/BookIcons"]
-offset_left = -189.0
-offset_top = -181.0
-offset_right = -133.0
-offset_bottom = -119.0
+offset_left = -190.0
+offset_top = -183.0
+offset_right = 1776.0
+offset_bottom = 1783.0
+scale = Vector2(0.0404366, 0.0378162)
 tooltip_text = "Water"
-texture = ExtResource("5_tctlc")
+texture = ExtResource("5_vawco")
 
 [node name="FIRE" type="TextureRect" parent="Book/BookIcons"]
-offset_left = -81.0
-offset_top = -182.0
-offset_right = -11.0
-offset_bottom = -120.0
+offset_left = -90.0
+offset_top = -191.0
+offset_right = 1876.0
+offset_bottom = 1775.0
+scale = Vector2(0.0422327, 0.0405568)
 tooltip_text = "Fire"
-texture = ExtResource("6_aa5qn")
+texture = ExtResource("6_4hehq")
 
 [node name="POISON" type="TextureRect" parent="Book/BookIcons"]
-offset_left = -194.0
-offset_top = -100.0
-offset_right = -124.0
-offset_bottom = -38.0
+offset_left = -196.0
+offset_top = -101.0
+offset_right = 1770.0
+offset_bottom = 1865.0
+scale = Vector2(0.0445942, 0.0391277)
 tooltip_text = "Poison"
-texture = ExtResource("7_cvagm")
+texture = ExtResource("7_7mgl6")
 
 [node name="ICE" type="TextureRect" parent="Book/BookIcons"]
-offset_left = -84.0
-offset_top = -104.0
-offset_right = -14.0
-offset_bottom = -42.0
+offset_left = -89.0
+offset_top = -105.0
+offset_right = 1877.0
+offset_bottom = 1861.0
+scale = Vector2(0.0382749, 0.0377697)
 tooltip_text = "Ice"
-texture = ExtResource("8_6cx3j")
+texture = ExtResource("8_co2ta")
 
 [node name="LIGHTNING" type="TextureRect" parent="Book/BookIcons"]
 offset_left = -200.0
 offset_top = -27.0
 offset_right = -130.0
 offset_bottom = 57.0
+scale = Vector2(0.0455611, 0.0482571)
 tooltip_text = "Lightning"
-texture = ExtResource("9_ciebk")
+texture = ExtResource("9_2vxao")
 
 [node name="DARK" type="TextureRect" parent="Book/BookIcons"]
 offset_left = -100.0
 offset_top = -26.0
 offset_right = 2.0
 offset_bottom = 58.0
+scale = Vector2(0.0437176, 0.0448187)
 tooltip_text = "Dark"
-texture = ExtResource("10_t17au")
+texture = ExtResource("10_xtao3")
 
 [node name="LIGHT" type="TextureRect" parent="Book/BookIcons"]
 offset_left = -188.0
 offset_top = 73.0
 offset_right = -130.0
 offset_bottom = 143.0
+scale = Vector2(0.037981, 0.036621)
 tooltip_text = "Light"
-texture = ExtResource("11_toog1")
+texture = ExtResource("11_od36y")
 
 [node name="WIND" type="TextureRect" parent="Book/BookIcons"]
 offset_left = -88.0
 offset_top = 65.0
 offset_right = -3.0
 offset_bottom = 135.0
+scale = Vector2(0.0392748, 0.0430299)
 tooltip_text = "Wind"
-texture = ExtResource("12_bawuo")
+texture = ExtResource("12_ddr0i")
 
 [node name="ROCK" type="TextureRect" parent="Book/BookIcons"]
 offset_left = -184.0
 offset_top = 162.0
 offset_right = -111.0
 offset_bottom = 217.0
+scale = Vector2(0.0378922, 0.0275868)
 tooltip_text = "Rock"
-texture = ExtResource("13_c8x3t")
+texture = ExtResource("13_0l11p")
 
 [node name="NATURE" type="TextureRect" parent="Book/BookIcons"]
 offset_left = -78.0
 offset_top = 158.0
 offset_right = -5.0
 offset_bottom = 220.0
+scale = Vector2(0.0356771, 0.0320377)
 tooltip_text = "Nature"
-texture = ExtResource("14_kuy1i")
+texture = ExtResource("14_ukgwx")
 
 [node name="Monsters" type="Node2D" parent="."]
 
