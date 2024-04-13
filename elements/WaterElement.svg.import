@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tpxwlury1onf"
-path="res://.godot/imported/fireicon.png-c193c9dc1c74d63441a65720c6e14621.ctex"
+uid="uid://2h3h37gjj35"
+path="res://.godot/imported/WaterElement.svg-c861a0f1783d2ec31a5ee6d5a1aaead6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://elements/fireicon.png"
-dest_files=["res://.godot/imported/fireicon.png-c193c9dc1c74d63441a65720c6e14621.ctex"]
+source_file="res://elements/WaterElement.svg"
+dest_files=["res://.godot/imported/WaterElement.svg-c861a0f1783d2ec31a5ee6d5a1aaead6.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

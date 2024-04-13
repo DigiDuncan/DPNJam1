@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcukh1ahepkn3"
-path="res://.godot/imported/poisonicon.png-edb50774a27e8e0044fc094002383ffd.ctex"
+uid="uid://bhr1fdcwslj8f"
+path="res://.godot/imported/DarkElement.svg-261b5f94ce0074332c7a014590587f35.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://elements/poisonicon.png"
-dest_files=["res://.godot/imported/poisonicon.png-edb50774a27e8e0044fc094002383ffd.ctex"]
+source_file="res://elements/DarkElement.svg"
+dest_files=["res://.godot/imported/DarkElement.svg-261b5f94ce0074332c7a014590587f35.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

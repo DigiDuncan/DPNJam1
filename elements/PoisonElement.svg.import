@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://du64giuklq70p"
-path="res://.godot/imported/iceicon.png-9c1718c311ba6e41999afd111a07d320.ctex"
+uid="uid://ckteu2d0rbyiu"
+path="res://.godot/imported/PoisonElement.svg-78b55f6b2018bdea2027ec5e6e28a8bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://elements/iceicon.png"
-dest_files=["res://.godot/imported/iceicon.png-9c1718c311ba6e41999afd111a07d320.ctex"]
+source_file="res://elements/PoisonElement.svg"
+dest_files=["res://.godot/imported/PoisonElement.svg-78b55f6b2018bdea2027ec5e6e28a8bd.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

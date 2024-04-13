@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhr1fdcwslj8f"
-path="res://.godot/imported/DarkElement.svg-1979a847c152c12f3aab797a060bbb24.ctex"
+uid="uid://dq4552f438fqb"
+path="res://.godot/imported/WindElement.svg-0704c7b17cd1727bcb5846590ba633ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DarkElement.svg"
-dest_files=["res://.godot/imported/DarkElement.svg-1979a847c152c12f3aab797a060bbb24.ctex"]
+source_file="res://elements/WindElement.svg"
+dest_files=["res://.godot/imported/WindElement.svg-0704c7b17cd1727bcb5846590ba633ef.ctex"]
 
 [params]
 

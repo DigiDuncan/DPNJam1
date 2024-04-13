@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cg6ugs2rf4ibt"
-path="res://.godot/imported/lightningicon.png-83d20845b022807d99a9d03d5b984066.ctex"
+uid="uid://bibyb1ne2cs75"
+path="res://.godot/imported/LightElement.svg-24f48dc2eb14209976d6ce0ba5f8e211.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://elements/lightningicon.png"
-dest_files=["res://.godot/imported/lightningicon.png-83d20845b022807d99a9d03d5b984066.ctex"]
+source_file="res://elements/LightElement.svg"
+dest_files=["res://.godot/imported/LightElement.svg-24f48dc2eb14209976d6ce0ba5f8e211.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

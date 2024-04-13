@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dq4552f438fqb"
-path="res://.godot/imported/WindElement.svg-d5ff11ef807f47ba2cfbd8aa66ff71e5.ctex"
+uid="uid://c3ftyfyvhrwqa"
+path="res://.godot/imported/FireElement.svg-df18a94866de27810c653ede688b7040.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://WindElement.svg"
-dest_files=["res://.godot/imported/WindElement.svg-d5ff11ef807f47ba2cfbd8aa66ff71e5.ctex"]
+source_file="res://elements/FireElement.svg"
+dest_files=["res://.godot/imported/FireElement.svg-df18a94866de27810c653ede688b7040.ctex"]
 
 [params]
 
