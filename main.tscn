@@ -413,18 +413,20 @@ NN%"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="YouGot" type="Node2D" parent="."]
+[node name="Popups" type="Node2D" parent="."]
+
+[node name="YouGot" type="Node2D" parent="Popups"]
 visible = false
 
-[node name="Background" type="Sprite2D" parent="YouGot"]
+[node name="Background" type="Sprite2D" parent="Popups/YouGot"]
 position = Vector2(645, 357)
 texture = ExtResource("18_tu8ha")
 
-[node name="GetIcon" type="Node2D" parent="YouGot"]
+[node name="GetIcon" type="Node2D" parent="Popups/YouGot"]
 position = Vector2(1043, 784)
 scale = Vector2(2.67406, 2.67406)
 
-[node name="WATER" type="TextureRect" parent="YouGot/GetIcon"]
+[node name="WATER" type="TextureRect" parent="Popups/YouGot/GetIcon"]
 visible = false
 offset_left = -190.0
 offset_top = -183.0
@@ -434,7 +436,7 @@ scale = Vector2(0.0404366, 0.0378162)
 tooltip_text = "Water"
 texture = ExtResource("5_vawco")
 
-[node name="FIRE" type="TextureRect" parent="YouGot/GetIcon"]
+[node name="FIRE" type="TextureRect" parent="Popups/YouGot/GetIcon"]
 visible = false
 offset_left = -193.0
 offset_top = -186.0
@@ -444,7 +446,7 @@ scale = Vector2(0.0422327, 0.0405568)
 tooltip_text = "Fire"
 texture = ExtResource("6_4hehq")
 
-[node name="POISON" type="TextureRect" parent="YouGot/GetIcon"]
+[node name="POISON" type="TextureRect" parent="Popups/YouGot/GetIcon"]
 visible = false
 offset_left = -197.0
 offset_top = -174.0
@@ -454,7 +456,7 @@ scale = Vector2(0.0445942, 0.0391277)
 tooltip_text = "Poison"
 texture = ExtResource("7_7mgl6")
 
-[node name="ICE" type="TextureRect" parent="YouGot/GetIcon"]
+[node name="ICE" type="TextureRect" parent="Popups/YouGot/GetIcon"]
 visible = false
 offset_left = -192.0
 offset_top = -178.0
@@ -464,7 +466,7 @@ scale = Vector2(0.0382749, 0.0377697)
 tooltip_text = "Ice"
 texture = ExtResource("8_co2ta")
 
-[node name="LIGHTNING" type="TextureRect" parent="YouGot/GetIcon"]
+[node name="LIGHTNING" type="TextureRect" parent="Popups/YouGot/GetIcon"]
 visible = false
 offset_left = -199.0
 offset_top = -189.0
@@ -474,7 +476,7 @@ scale = Vector2(0.0455611, 0.0482571)
 tooltip_text = "Lightning"
 texture = ExtResource("9_2vxao")
 
-[node name="DARK" type="TextureRect" parent="YouGot/GetIcon"]
+[node name="DARK" type="TextureRect" parent="Popups/YouGot/GetIcon"]
 visible = false
 offset_left = -201.0
 offset_top = -185.0
@@ -484,7 +486,7 @@ scale = Vector2(0.0437176, 0.0448187)
 tooltip_text = "Dark"
 texture = ExtResource("10_xtao3")
 
-[node name="LIGHT" type="TextureRect" parent="YouGot/GetIcon"]
+[node name="LIGHT" type="TextureRect" parent="Popups/YouGot/GetIcon"]
 visible = false
 offset_left = -188.0
 offset_top = -177.0
@@ -494,7 +496,7 @@ scale = Vector2(0.037981, 0.036621)
 tooltip_text = "Light"
 texture = ExtResource("11_od36y")
 
-[node name="WIND" type="TextureRect" parent="YouGot/GetIcon"]
+[node name="WIND" type="TextureRect" parent="Popups/YouGot/GetIcon"]
 visible = false
 offset_left = -192.0
 offset_top = -181.0
@@ -504,7 +506,7 @@ scale = Vector2(0.0392748, 0.0430299)
 tooltip_text = "Wind"
 texture = ExtResource("12_ddr0i")
 
-[node name="ROCK" type="TextureRect" parent="YouGot/GetIcon"]
+[node name="ROCK" type="TextureRect" parent="Popups/YouGot/GetIcon"]
 visible = false
 offset_left = -188.0
 offset_top = -166.0
@@ -514,7 +516,7 @@ scale = Vector2(0.0378922, 0.0275868)
 tooltip_text = "Rock"
 texture = ExtResource("13_0l11p")
 
-[node name="NATURE" type="TextureRect" parent="YouGot/GetIcon"]
+[node name="NATURE" type="TextureRect" parent="Popups/YouGot/GetIcon"]
 visible = false
 offset_left = -187.0
 offset_top = -169.0
@@ -524,12 +526,12 @@ scale = Vector2(0.0356771, 0.0320377)
 tooltip_text = "Nature"
 texture = ExtResource("14_ukgwx")
 
-[node name="YouLost" type="Sprite2D" parent="."]
+[node name="YouLost" type="Sprite2D" parent="Popups"]
 visible = false
 position = Vector2(646, 353)
 texture = ExtResource("19_f87h6")
 
-[node name="YouWon" type="Sprite2D" parent="."]
+[node name="YouWon" type="Sprite2D" parent="Popups"]
 visible = false
 position = Vector2(646, 355)
 texture = ExtResource("20_bhgh1")
