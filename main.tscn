@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://lqhis24b5sgv"]
+[gd_scene load_steps=25 format=3 uid="uid://lqhis24b5sgv"]
 
 [ext_resource type="Texture2D" uid="uid://dj08t07ghfl0g" path="res://Background.png" id="1_58v8u"]
 [ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_uu1go"]
@@ -19,6 +19,7 @@
 [ext_resource type="Shader" path="res://blur.gdshader" id="17_5nw4s"]
 [ext_resource type="AudioStream" uid="uid://bh571s2xo8ikw" path="res://funnysong.wav" id="17_83ipy"]
 [ext_resource type="Texture2D" uid="uid://ein7ust33lnj" path="res://yougot.png" id="18_tu8ha"]
+[ext_resource type="Script" path="res://YouGot.gd" id="19_5adlu"]
 [ext_resource type="Texture2D" uid="uid://bmm5ryjagoght" path="res://YouLost.png" id="19_f87h6"]
 [ext_resource type="Texture2D" uid="uid://cg6pcmrvvxxts" path="res://YouWon.png" id="20_bhgh1"]
 
@@ -425,6 +426,7 @@ vertical_alignment = 1
 
 [node name="YouGot" type="Node2D" parent="Popups"]
 visible = false
+script = ExtResource("19_5adlu")
 
 [node name="Background" type="Sprite2D" parent="Popups/YouGot"]
 position = Vector2(645, 357)
