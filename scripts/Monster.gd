@@ -47,5 +47,8 @@ func _on_button_pressed():
 
 func _on_summon_button_pressed():
 	var book: Book = $"../../Book"  # CRINGE
-	primary_type = MonsterType[book.primary_element]
-	secondary_type = MonsterType[book.secondary_element]
+	primary_type = book.primary_element
+	secondary_type = book.secondary_element
+	book.primary_element = null
+	book.secondary_element = null
+	book.show_available()
