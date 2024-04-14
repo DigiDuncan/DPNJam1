@@ -28,7 +28,8 @@ offset_bottom = 227.0
 texture = ExtResource("1_58v8u")
 
 [node name="Book" type="Node2D" parent="."]
-position = Vector2(299, 480)
+visible = false
+position = Vector2(210, 481)
 script = ExtResource("3_mg51g")
 
 [node name="BookBackground" type="Sprite2D" parent="Book"]
@@ -152,6 +153,15 @@ offset_left = 750.0
 offset_top = 62.0
 offset_right = 995.0
 offset_bottom = 151.0
-text = "random enemy"
+text = "Randomize Enemy
+(DEBUG)"
+
+[node name="BookButton" type="Button" parent="."]
+offset_left = 100.0
+offset_top = 189.0
+offset_right = 345.0
+offset_bottom = 278.0
+text = "Book"
 
 [connection signal="pressed" from="RandomEnemyButton" to="Monsters/EnemyMonster" method="_on_button_pressed"]
+[connection signal="pressed" from="BookButton" to="Book" method="_on_book_button_pressed"]

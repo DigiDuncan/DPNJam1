@@ -10,6 +10,11 @@ func show_available():
 		else:
 			icon_node.set_visible(false)
 
+func show_or_hide_book():
+	if self.visible:
+		self.set_visible(false)
+	else:
+		self.set_visible(true)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -19,3 +24,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
+func _on_book_button_pressed():
+	show_or_hide_book()
