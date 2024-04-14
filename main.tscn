@@ -147,11 +147,11 @@ hframes = 10
 vframes = 10
 script = ExtResource("14_x2cdo")
 
-[node name="Button" type="Button" parent="."]
+[node name="RandomEnemyButton" type="Button" parent="."]
 offset_left = 750.0
 offset_top = 62.0
 offset_right = 995.0
 offset_bottom = 151.0
 text = "random enemy"
 
-[connection signal="pressed" from="Button" to="Monsters/EnemyMonster" method="_on_button_pressed"]
+[connection signal="pressed" from="RandomEnemyButton" to="Monsters/EnemyMonster" method="_on_button_pressed"]
