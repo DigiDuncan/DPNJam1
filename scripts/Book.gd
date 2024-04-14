@@ -7,8 +7,6 @@ var secondary_icon_nodes: Array[CanvasItem] = []
 var primary_element = null
 var secondary_element = null
 
-signal player_win
-
 func choose_starting_elements():
 	while elements_unlocked.size() < 4:
 		var new_element = randi() % Monster.MonsterType.size()
@@ -26,9 +24,6 @@ func show_available():
 
 func show_or_hide_book():
 	set_visible(not visible)
-
-func on_select_element(element: Monster.MonsterType):
-	pass
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

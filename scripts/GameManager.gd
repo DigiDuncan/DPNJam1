@@ -11,15 +11,13 @@ func _ready():
 func _process(delta):
 	pass
 
-func _on_book_player_win():
-	pass # Replace with function body.
-
-func _on_book_player_lose():
-	pass # Replace with the player being a looser. Boowomp :(
-
 
 func _on_summon_button_pressed():
 	var enemy: Monster = $"../Monsters/EnemyMonster"
 	var ally: Monster = $"../Monsters/AllyMonster"
 
-	print(enemy.defend(ally))
+	var likelyhood = enemy.defend(ally)
+	var roll = randf()
+	var win = roll <= likelyhood
+
+	print("Likelyhood: ", likelyhood, " Roll: ", roll, " Win: ", win)
