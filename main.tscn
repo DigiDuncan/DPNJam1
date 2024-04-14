@@ -128,6 +128,13 @@ scale = Vector2(0.0356771, 0.0320377)
 tooltip_text = "Nature"
 texture = ExtResource("14_ukgwx")
 
+[node name="SummonButton" type="Button" parent="Book"]
+offset_left = 50.0
+offset_top = 171.0
+offset_right = 196.0
+offset_bottom = 216.0
+text = "SUMMON"
+
 [node name="Monsters" type="Node2D" parent="."]
 
 [node name="EnemyMonster" type="Sprite2D" parent="Monsters"]
@@ -140,6 +147,7 @@ vframes = 10
 script = ExtResource("14_x2cdo")
 
 [node name="AllyMonster" type="Sprite2D" parent="Monsters"]
+visible = false
 texture_filter = 1
 position = Vector2(638, 632)
 scale = Vector2(2, 2)
@@ -157,9 +165,9 @@ text = "Randomize Enemy
 (DEBUG)"
 
 [node name="BookButton" type="Button" parent="."]
-offset_left = 100.0
-offset_top = 189.0
-offset_right = 345.0
+offset_left = 171.0
+offset_top = 233.0
+offset_right = 288.0
 offset_bottom = 278.0
 text = "Book"
 
