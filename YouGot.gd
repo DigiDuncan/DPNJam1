@@ -9,7 +9,6 @@ func _ready():
 		var node = get_node("GetIcon/" + Monster.MonsterType.find_key(element)) as TextureRect
 		icon_nodes.append(node)
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass

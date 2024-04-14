@@ -400,37 +400,6 @@ hframes = 10
 vframes = 10
 script = ExtResource("14_x2cdo")
 
-[node name="RandomEnemyButton" type="Button" parent="."]
-offset_left = 518.0
-offset_top = 30.0
-offset_right = 763.0
-offset_bottom = 119.0
-text = "Randomize Enemy
-(DEBUG)"
-
-[node name="BookButton" type="Button" parent="."]
-offset_left = 171.0
-offset_top = 233.0
-offset_right = 288.0
-offset_bottom = 278.0
-text = "Book"
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("17_83ipy")
-volume_db = -20.787
-autoplay = true
-panning_strength = 0.0
-
-[node name="WinLabel" type="Label" parent="."]
-offset_left = 791.0
-offset_top = 601.0
-offset_right = 911.0
-offset_bottom = 656.0
-text = "Chance to win:
-NN%"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="Popups" type="Node2D" parent="."]
 
 [node name="YouGot" type="Node2D" parent="Popups"]
@@ -554,6 +523,48 @@ texture = ExtResource("19_f87h6")
 visible = false
 position = Vector2(646, 355)
 texture = ExtResource("20_bhgh1")
+
+[node name="RandomEnemyButton" type="Button" parent="."]
+visible = false
+offset_left = 518.0
+offset_top = 30.0
+offset_right = 763.0
+offset_bottom = 119.0
+text = "Randomize Enemy
+(DEBUG)"
+
+[node name="BookButton" type="Button" parent="."]
+offset_left = 171.0
+offset_top = 233.0
+offset_right = 288.0
+offset_bottom = 278.0
+text = "Book"
+
+[node name="RoundLabel" type="Label" parent="."]
+offset_left = 20.0
+offset_top = -4.0
+offset_right = 200.0
+offset_bottom = 66.0
+theme_override_font_sizes/font_size = 26
+text = "ROUND 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="WinLabel" type="Label" parent="."]
+offset_left = 791.0
+offset_top = 601.0
+offset_right = 911.0
+offset_bottom = 656.0
+text = "Chance to win:
+NN%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("17_83ipy")
+volume_db = -20.787
+autoplay = true
+panning_strength = 0.0
 
 [connection signal="pressed" from="Book/SummonButton" to="GameManager" method="_on_summon_button_pressed"]
 [connection signal="pressed" from="Book/SummonButton" to="Book" method="_on_summon_button_pressed"]

@@ -65,10 +65,8 @@ func _on_element_select(event, element: Monster.MonsterType):
 			show_available()
 			return
 
-
 func _on_summon_button_pressed():
 	$SummonButton.hide()
-
 
 func _on_clear_button_pressed():
 	primary_element = null

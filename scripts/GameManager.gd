@@ -1,6 +1,10 @@
 class_name GameManager extends Node
 
-var rounds: int = 0
+# TODO: This class uses $/get_node kinda egregiously,
+# but to be fair, that's party because it should have been
+# the parent object. Also because I need to learn signals better.
+
+var rounds: int = 1
 var game_over: bool = false
 
 # Called when the node enters the scene tree for the first time.
@@ -40,6 +44,10 @@ func battle_win(enemy: Monster):
 	enemy.random_enemy()
 
 func _on_summon_button_pressed():
+	rounds += 1
+	
+	$"../RoundLabel".text = "ROUND %s" % rounds
+	
 	var enemy: Monster = $"../Monsters/EnemyMonster"
 	var ally: Monster = $"../Monsters/AllyMonster"
 
