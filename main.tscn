@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://lqhis24b5sgv"]
+[gd_scene load_steps=22 format=3 uid="uid://lqhis24b5sgv"]
 
 [ext_resource type="Texture2D" uid="uid://dj08t07ghfl0g" path="res://Background.png" id="1_58v8u"]
 [ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_uu1go"]
@@ -16,8 +16,24 @@
 [ext_resource type="Texture2D" uid="uid://gvta1pp0vepk" path="res://monster_sheet.png" id="13_ot1gd"]
 [ext_resource type="Texture2D" uid="uid://bswbneyam7s55" path="res://elements/NatureElement.svg" id="14_ukgwx"]
 [ext_resource type="Script" path="res://scripts/Monster.gd" id="14_x2cdo"]
-[ext_resource type="Script" path="res://scripts/SummonButton.gd" id="15_1kunw"]
 [ext_resource type="AudioStream" uid="uid://bh571s2xo8ikw" path="res://funnysong.wav" id="17_83ipy"]
+[ext_resource type="Texture2D" uid="uid://ein7ust33lnj" path="res://yougot.png" id="18_tu8ha"]
+[ext_resource type="Texture2D" uid="uid://bmm5ryjagoght" path="res://YouLost.png" id="19_f87h6"]
+[ext_resource type="Texture2D" uid="uid://cg6pcmrvvxxts" path="res://YouWon.png" id="20_bhgh1"]
+
+[sub_resource type="GDScript" id="GDScript_xbnlv"]
+script/source = "extends Button
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
 
 [node name="Everything" type="Node2D"]
 
@@ -344,7 +360,7 @@ offset_top = 171.0
 offset_right = 196.0
 offset_bottom = 216.0
 text = "SUMMON"
-script = ExtResource("15_1kunw")
+script = SubResource("GDScript_xbnlv")
 
 [node name="Monsters" type="Node2D" parent="."]
 
@@ -396,6 +412,127 @@ text = "Chance to win:
 NN%"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="YouGot" type="Node2D" parent="."]
+visible = false
+
+[node name="Background" type="Sprite2D" parent="YouGot"]
+position = Vector2(645, 357)
+texture = ExtResource("18_tu8ha")
+
+[node name="GetIcon" type="Node2D" parent="YouGot"]
+position = Vector2(1043, 784)
+scale = Vector2(2.67406, 2.67406)
+
+[node name="WATER" type="TextureRect" parent="YouGot/GetIcon"]
+visible = false
+offset_left = -190.0
+offset_top = -183.0
+offset_right = 1776.0
+offset_bottom = 1783.0
+scale = Vector2(0.0404366, 0.0378162)
+tooltip_text = "Water"
+texture = ExtResource("5_vawco")
+
+[node name="FIRE" type="TextureRect" parent="YouGot/GetIcon"]
+visible = false
+offset_left = -193.0
+offset_top = -186.0
+offset_right = 1773.0
+offset_bottom = 1780.0
+scale = Vector2(0.0422327, 0.0405568)
+tooltip_text = "Fire"
+texture = ExtResource("6_4hehq")
+
+[node name="POISON" type="TextureRect" parent="YouGot/GetIcon"]
+visible = false
+offset_left = -197.0
+offset_top = -174.0
+offset_right = 1769.0
+offset_bottom = 1792.0
+scale = Vector2(0.0445942, 0.0391277)
+tooltip_text = "Poison"
+texture = ExtResource("7_7mgl6")
+
+[node name="ICE" type="TextureRect" parent="YouGot/GetIcon"]
+visible = false
+offset_left = -192.0
+offset_top = -178.0
+offset_right = 1774.0
+offset_bottom = 1788.0
+scale = Vector2(0.0382749, 0.0377697)
+tooltip_text = "Ice"
+texture = ExtResource("8_co2ta")
+
+[node name="LIGHTNING" type="TextureRect" parent="YouGot/GetIcon"]
+visible = false
+offset_left = -199.0
+offset_top = -189.0
+offset_right = 1767.0
+offset_bottom = 1777.0
+scale = Vector2(0.0455611, 0.0482571)
+tooltip_text = "Lightning"
+texture = ExtResource("9_2vxao")
+
+[node name="DARK" type="TextureRect" parent="YouGot/GetIcon"]
+visible = false
+offset_left = -201.0
+offset_top = -185.0
+offset_right = 1765.0
+offset_bottom = 1781.0
+scale = Vector2(0.0437176, 0.0448187)
+tooltip_text = "Dark"
+texture = ExtResource("10_xtao3")
+
+[node name="LIGHT" type="TextureRect" parent="YouGot/GetIcon"]
+visible = false
+offset_left = -188.0
+offset_top = -177.0
+offset_right = 1778.0
+offset_bottom = 1789.0
+scale = Vector2(0.037981, 0.036621)
+tooltip_text = "Light"
+texture = ExtResource("11_od36y")
+
+[node name="WIND" type="TextureRect" parent="YouGot/GetIcon"]
+visible = false
+offset_left = -192.0
+offset_top = -181.0
+offset_right = 1774.0
+offset_bottom = 1785.0
+scale = Vector2(0.0392748, 0.0430299)
+tooltip_text = "Wind"
+texture = ExtResource("12_ddr0i")
+
+[node name="ROCK" type="TextureRect" parent="YouGot/GetIcon"]
+visible = false
+offset_left = -188.0
+offset_top = -166.0
+offset_right = 1778.0
+offset_bottom = 1800.0
+scale = Vector2(0.0378922, 0.0275868)
+tooltip_text = "Rock"
+texture = ExtResource("13_0l11p")
+
+[node name="NATURE" type="TextureRect" parent="YouGot/GetIcon"]
+visible = false
+offset_left = -187.0
+offset_top = -169.0
+offset_right = 1779.0
+offset_bottom = 1797.0
+scale = Vector2(0.0356771, 0.0320377)
+tooltip_text = "Nature"
+texture = ExtResource("14_ukgwx")
+
+[node name="YouLost" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(646, 353)
+texture = ExtResource("19_f87h6")
+
+[node name="YouWon" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(646, 355)
+texture = ExtResource("20_bhgh1")
 
 [connection signal="pressed" from="Book/SummonButton" to="GameManager" method="_on_summon_button_pressed"]
 [connection signal="pressed" from="Book/SummonButton" to="Book" method="_on_summon_button_pressed"]
