@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://lqhis24b5sgv"]
+[gd_scene load_steps=24 format=3 uid="uid://lqhis24b5sgv"]
 
 [ext_resource type="Texture2D" uid="uid://dj08t07ghfl0g" path="res://Background.png" id="1_58v8u"]
 [ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_uu1go"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://gvta1pp0vepk" path="res://monster_sheet.png" id="13_ot1gd"]
 [ext_resource type="Texture2D" uid="uid://bswbneyam7s55" path="res://elements/NatureElement.svg" id="14_ukgwx"]
 [ext_resource type="Script" path="res://scripts/Monster.gd" id="14_x2cdo"]
+[ext_resource type="Shader" path="res://blur.gdshader" id="17_5nw4s"]
 [ext_resource type="AudioStream" uid="uid://bh571s2xo8ikw" path="res://funnysong.wav" id="17_83ipy"]
 [ext_resource type="Texture2D" uid="uid://ein7ust33lnj" path="res://yougot.png" id="18_tu8ha"]
 [ext_resource type="Texture2D" uid="uid://bmm5ryjagoght" path="res://YouLost.png" id="19_f87h6"]
@@ -34,6 +35,10 @@ func _ready():
 func _process(delta):
 	pass
 "
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y4ps2"]
+shader = ExtResource("17_5nw4s")
+shader_parameter/blur_amount = 5.0
 
 [node name="Everything" type="Node2D"]
 
@@ -377,6 +382,7 @@ script = ExtResource("14_x2cdo")
 
 [node name="AllyMonster" type="Sprite2D" parent="Monsters"]
 texture_filter = 1
+material = SubResource("ShaderMaterial_y4ps2")
 position = Vector2(628, 564)
 scale = Vector2(4.41489, 4.41489)
 texture = ExtResource("13_ot1gd")
