@@ -21,3 +21,5 @@ func _on_summon_button_pressed():
 	var win = roll <= likelyhood
 
 	print("Likelyhood: ", likelyhood, " Roll: ", roll, " Win: ", win)
+	
+	$"../WinLabel".text = "Chance To Win:\n%2d%%" % (likelyhood * 100)

@@ -28,6 +28,7 @@ func show_or_hide_book():
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	for element in Monster.MonsterType.values():
+		# Cache icon nodes
 		var node = get_node("BookIcons/" + Monster.MonsterType.find_key(element)) as TextureRect
 		icon_nodes.append(node)
 		node.gui_input.connect(_on_element_select.bind(element))

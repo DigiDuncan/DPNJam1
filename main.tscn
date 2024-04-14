@@ -387,6 +387,16 @@ volume_db = -20.787
 autoplay = true
 panning_strength = 0.0
 
+[node name="WinLabel" type="Label" parent="."]
+offset_left = 791.0
+offset_top = 601.0
+offset_right = 911.0
+offset_bottom = 656.0
+text = "Chance to win:
+NN%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="pressed" from="Book/SummonButton" to="GameManager" method="_on_summon_button_pressed"]
 [connection signal="pressed" from="Book/SummonButton" to="Book" method="_on_summon_button_pressed"]
 [connection signal="pressed" from="Book/SummonButton" to="Monsters/AllyMonster" method="_on_summon_button_pressed"]
