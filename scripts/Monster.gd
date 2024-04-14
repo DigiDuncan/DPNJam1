@@ -44,3 +44,8 @@ func _process(delta):
 
 func _on_button_pressed():
 	random_enemy()
+
+func _on_summon_button_pressed():
+	var book: Book = $"../../Book"  # CRINGE
+	primary_type = MonsterType[book.primary_element]
+	secondary_type = MonsterType[book.secondary_element]
