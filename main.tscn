@@ -41,8 +41,10 @@ func _process(delta):
 script = ExtResource("1_uu1go")
 
 [node name="Fightzone" type="TextureRect" parent="."]
-offset_right = 1280.0
-offset_bottom = 720.0
+offset_top = -58.0
+offset_right = 7016.0
+offset_bottom = 4903.0
+scale = Vector2(0.18255, 0.18255)
 texture = ExtResource("1_58v8u")
 
 [node name="Book" type="Node2D" parent="."]
@@ -366,8 +368,8 @@ script = SubResource("GDScript_xbnlv")
 
 [node name="EnemyMonster" type="Sprite2D" parent="Monsters"]
 texture_filter = 1
-position = Vector2(638, 105)
-scale = Vector2(2, 2)
+position = Vector2(636, 275)
+scale = Vector2(2.76815, 2.76815)
 texture = ExtResource("13_ot1gd")
 hframes = 10
 vframes = 10
@@ -375,18 +377,18 @@ script = ExtResource("14_x2cdo")
 
 [node name="AllyMonster" type="Sprite2D" parent="Monsters"]
 texture_filter = 1
-position = Vector2(638, 632)
-scale = Vector2(2, 2)
+position = Vector2(628, 564)
+scale = Vector2(4.41489, 4.41489)
 texture = ExtResource("13_ot1gd")
 hframes = 10
 vframes = 10
 script = ExtResource("14_x2cdo")
 
 [node name="RandomEnemyButton" type="Button" parent="."]
-offset_left = 750.0
-offset_top = 62.0
-offset_right = 995.0
-offset_bottom = 151.0
+offset_left = 518.0
+offset_top = 30.0
+offset_right = 763.0
+offset_bottom = 119.0
 text = "Randomize Enemy
 (DEBUG)"
 
