@@ -23,7 +23,7 @@ func change_sprite():
 func _ready():
 	primary_type = primary_type
 	secondary_type = secondary_type
-	self.change_sprite()
+	random_enemy()
 
 func random_enemy():
 	primary_type = MonsterType.values()[randi() % MonsterType.size()]
