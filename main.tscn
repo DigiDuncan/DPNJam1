@@ -383,8 +383,8 @@ script = ExtResource("14_x2cdo")
 [node name="AllyMonster" type="Sprite2D" parent="Monsters"]
 texture_filter = 1
 material = SubResource("ShaderMaterial_y4ps2")
-position = Vector2(628, 564)
-scale = Vector2(4.41489, 4.41489)
+position = Vector2(650, 568)
+scale = Vector2(-4.415, 4.415)
 texture = ExtResource("13_ot1gd")
 hframes = 10
 vframes = 10
