@@ -15,3 +15,6 @@ func _process(delta):
 
 func _on_book_player_win():
 	pass # Replace with function body.
+
+func _on_book_player_lose():
+	pass # Replace with the player being a looser. Boowomp :(

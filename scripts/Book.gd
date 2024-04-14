@@ -2,6 +2,8 @@ class_name Book extends Node2D
 
 var elements_unlocked: Array[Monster.MonsterType] = []
 var icon_nodes: Array[CanvasItem] = []
+var primary_element = null
+var secondary_element = null
 
 signal player_win
 
@@ -50,5 +52,11 @@ func _on_book_button_pressed():
 
 
 func _on_element_select(event, element: Monster.MonsterType):
-	if event is InputEventMouseButton and event.pressed:
-		print(Monster.MonsterType.find_key(element))
+	if event is InputEventMouseButton and event.pressed and primary_element == null:
+			primary_element = Monster.MonsterType.find_key(element)
+			return
+	if event is InputEventMouseButton and event.pressed and primary_element != null and secondary_element == null:
+			secondary_element = Monster.MonsterType.find_key(element)
+			print(primary_element)
+			print(secondary_element)
+			return
