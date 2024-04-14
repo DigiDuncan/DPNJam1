@@ -170,6 +170,5 @@ autoplay = true
 panning_strength = 0.0
 
 [connection signal="player_win" from="Book" to="GameManager" method="_on_book_player_win"]
-[connection signal="gui_input" from="Book/BookIcons/WATER" to="Book" method="_on_element_select" binds= [0]]
 [connection signal="pressed" from="RandomEnemyButton" to="Monsters/EnemyMonster" method="_on_button_pressed"]
 [connection signal="pressed" from="BookButton" to="Book" method="_on_book_button_pressed"]

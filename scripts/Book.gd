@@ -31,7 +31,9 @@ func on_select_element(element: Monster.MonsterType):
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	for element in Monster.MonsterType.values():
-		icon_nodes.append(get_node("BookIcons/" + Monster.MonsterType.find_key(element)))
+		var node = get_node("BookIcons/" + Monster.MonsterType.find_key(element)) as TextureRect
+		icon_nodes.append(node)
+		node.gui_input.connect(_on_element_select.bind(element))
 		
 	choose_starting_elements()
 	print(elements_unlocked)
@@ -48,4 +50,5 @@ func _on_book_button_pressed():
 
 
 func _on_element_select(event, element: Monster.MonsterType):
-	print(event, element)
+	if event is InputEventMouseButton and event.pressed:
+		print(Monster.MonsterType.find_key(element))
