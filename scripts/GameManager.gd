@@ -55,7 +55,7 @@ func battle_win(enemy: Monster):
 	$"../Monsters/AllyMonster".set_visible(false)
 	$"../WinLabel".set_visible(false)
 
-func _on_summon_button_pressed():
+func _on_ally_monster_do_battle():
 	rounds += 1
 	
 	$"../RoundLabel".text = "ROUND %s" % rounds

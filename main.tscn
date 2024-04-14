@@ -567,9 +567,9 @@ volume_db = -20.787
 autoplay = true
 panning_strength = 0.0
 
-[connection signal="pressed" from="Book/SummonButton" to="GameManager" method="_on_summon_button_pressed"]
 [connection signal="pressed" from="Book/SummonButton" to="Book" method="_on_summon_button_pressed"]
 [connection signal="pressed" from="Book/SummonButton" to="Monsters/AllyMonster" method="_on_summon_button_pressed"]
 [connection signal="pressed" from="Book/ClearButton" to="Book" method="_on_clear_button_pressed"]
+[connection signal="do_battle" from="Monsters/AllyMonster" to="GameManager" method="_on_ally_monster_do_battle"]
 [connection signal="pressed" from="RandomEnemyButton" to="Monsters/EnemyMonster" method="_on_button_pressed"]
 [connection signal="pressed" from="BookButton" to="Book" method="_on_book_button_pressed"]

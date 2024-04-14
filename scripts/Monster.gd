@@ -5,6 +5,8 @@ enum MonsterType {POISON, FIRE, WATER, ICE, LIGHTNING, DARK, LIGHT, WIND, ROCK, 
 
 const WIN_TABLE = preload("res://wintable.tres")
 
+signal do_battle
+
 @export var primary_type: MonsterType:
 	set(value):
 		primary_type = value
@@ -58,3 +60,4 @@ func _on_summon_button_pressed():
 	book.primary_element = null
 	book.secondary_element = null
 	book.show_available()
+	do_battle.emit()
