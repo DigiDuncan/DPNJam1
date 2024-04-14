@@ -63,7 +63,7 @@ func _on_ally_monster_do_battle():
 	var enemy: Monster = $"../Monsters/EnemyMonster"
 	var ally: Monster = $"../Monsters/AllyMonster"
 
-	var likelyhood = enemy.defend(ally) * 1.2
+	var likelyhood = ally.defend(enemy) * 1.2
 	var roll = randf()
 	var win = roll <= likelyhood
 
