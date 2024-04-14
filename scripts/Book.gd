@@ -59,5 +59,10 @@ func _on_element_select(event, element: Monster.MonsterType):
 			secondary_element = element
 			print(primary_element)
 			print(secondary_element)
+			$SummonButton.show()
 			show_available()
 			return
+
+
+func _on_summon_button_pressed():
+	$SummonButton.hide()
