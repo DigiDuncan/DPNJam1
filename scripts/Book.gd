@@ -66,6 +66,7 @@ func _on_element_select(event, element: Monster.MonsterType):
 			return
 
 func _on_summon_button_pressed():
+	$ClearButton.hide()
 	$SummonButton.hide()
 
 func _on_clear_button_pressed():
