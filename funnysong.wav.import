@@ -2,11 +2,7 @@
 
 importer="wav"
 type="AudioStreamWAV"
-<<<<<<< Updated upstream
-uid="uid://bqdt0xeagns6y"
-=======
-uid="uid://bb6tj10yvb3u6"
->>>>>>> Stashed changes
+uid="uid://bh571s2xo8ikw"
 path="res://.godot/imported/funnysong.wav-5f11a7a9341f3934aaf7420d70f6f8b2.sample"
 
 [deps]
