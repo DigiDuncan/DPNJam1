@@ -54,6 +54,7 @@ func _on_book_button_pressed():
 func _on_element_select(event, element: Monster.MonsterType):
 	if event is InputEventMouseButton and event.pressed and primary_element == null:
 			primary_element = element
+			$ClearButton.show()
 			show_available()
 			return
 	if event is InputEventMouseButton and event.pressed and primary_element != null and secondary_element == null:
@@ -66,4 +67,12 @@ func _on_element_select(event, element: Monster.MonsterType):
 
 
 func _on_summon_button_pressed():
+	$SummonButton.hide()
+
+
+func _on_clear_button_pressed():
+	primary_element = null
+	secondary_element = null
+	show_available()
+	$ClearButton.hide()
 	$SummonButton.hide()
