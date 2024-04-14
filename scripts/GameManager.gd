@@ -22,7 +22,7 @@ func lose():
 	get_tree().quit()
 	
 func win():
-	$"../Popups/YouWin".set_visible(true)
+	$"../Popups/YouWon".set_visible(true)
 	var time_in_seconds = 3
 	await get_tree().create_timer(time_in_seconds).timeout
 	get_tree().quit()
