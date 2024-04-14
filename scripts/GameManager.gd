@@ -21,6 +21,12 @@ func lose():
 	await get_tree().create_timer(time_in_seconds).timeout
 	get_tree().quit()
 	
+func win():
+	$"../Popups/YouWin".set_visible(true)
+	var time_in_seconds = 3
+	await get_tree().create_timer(time_in_seconds).timeout
+	get_tree().quit()
+	
 func show_element_modal(element: Monster.MonsterType):
 	var popup = $"../Popups/YouGot"
 	for element_idx in Monster.MonsterType.size():
@@ -33,6 +39,8 @@ func show_element_modal(element: Monster.MonsterType):
 	
 func battle_win(enemy: Monster):
 	var book: Book = $"../Book"
+	if len(book.elements_unlocked) == 10:
+		win()
 	if enemy.primary_type not in book.elements_unlocked:
 		book.elements_unlocked.append(enemy.primary_type)
 		book.show_available()
