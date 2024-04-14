@@ -391,6 +391,7 @@ vframes = 10
 script = ExtResource("14_x2cdo")
 
 [node name="AllyMonster" type="Sprite2D" parent="Monsters"]
+visible = false
 texture_filter = 1
 material = SubResource("ShaderMaterial_y4ps2")
 position = Vector2(650, 568)

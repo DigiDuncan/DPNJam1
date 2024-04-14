@@ -42,6 +42,7 @@ func battle_win(enemy: Monster):
 		book.show_available()
 		show_element_modal(enemy.secondary_type)
 	enemy.random_enemy()
+	$"../Monsters/AllyMonster".set_visible(false)
 
 func _on_summon_button_pressed():
 	rounds += 1
