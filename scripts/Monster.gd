@@ -33,7 +33,7 @@ func random_enemy():
 	
 func compare_elements(defender: MonsterType, attacker: MonsterType):
 	var result = WIN_TABLE.table[defender][attacker]
-	print(MonsterType.find_key(attacker), " vs ", MonsterType.find_key(defender), ": ", WIN_TABLE.Result.find_key(result))
+	print(MonsterType.find_key(defender), " vs ", MonsterType.find_key(attacker), ": ", WIN_TABLE.Result.find_key(result))
 	return result
 	
 func defend(attacker: Monster):
