@@ -42,7 +42,10 @@ func battle_win(enemy: Monster):
 		book.show_available()
 		show_element_modal(enemy.secondary_type)
 	enemy.random_enemy()
+	var time_in_seconds = 1
+	await get_tree().create_timer(time_in_seconds).timeout
 	$"../Monsters/AllyMonster".set_visible(false)
+	$"../WinLabel".set_visible(false)
 
 func _on_summon_button_pressed():
 	rounds += 1
@@ -59,6 +62,7 @@ func _on_summon_button_pressed():
 	print("Likelyhood: ", likelyhood, " Roll: ", roll, " Win: ", win)
 	
 	$"../WinLabel".text = "Chance To Win:\n%2d%%" % (likelyhood * 100)
+	$"../WinLabel".set_visible(true)
 	
 	if not win:
 		lose()
