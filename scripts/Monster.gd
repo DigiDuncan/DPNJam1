@@ -30,13 +30,17 @@ func random_enemy():
 	secondary_type = MonsterType.values()[randi() % MonsterType.size()]
 	
 func compare_elements(defender: MonsterType, attacker: MonsterType):
-	return WIN_TABLE.table[defender][attacker]
+	var result = WIN_TABLE.table[defender][attacker]
+	print(MonsterType.find_key(attacker), " vs ", MonsterType.find_key(defender), ": ", WIN_TABLE.Result.find_key(result))
+	return result
 	
 func defend(attacker: Monster):
-	return (compare_elements(primary_type, attacker.primary_type) +
+	var result = (compare_elements(primary_type, attacker.primary_type) +
 	compare_elements(primary_type, attacker.secondary_type) +
 	compare_elements(secondary_type, attacker.primary_type) +
 	compare_elements(secondary_type, attacker.secondary_type)) / 8.0
+	print("Preadjusted Likelyhood: ", result)
+	return result
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

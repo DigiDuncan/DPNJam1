@@ -40,7 +40,6 @@ func _ready():
 		secondary_icon_nodes.append(node)
 		
 	choose_starting_elements()
-	print(elements_unlocked)
 	show_available()
 
 
@@ -59,8 +58,6 @@ func _on_element_select(event, element: Monster.MonsterType):
 			return
 	if event is InputEventMouseButton and event.pressed and primary_element != null and secondary_element == null:
 			secondary_element = element
-			print(primary_element)
-			print(secondary_element)
 			$SummonButton.show()
 			show_available()
 			return
