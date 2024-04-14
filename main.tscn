@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://lqhis24b5sgv"]
+[gd_scene load_steps=18 format=3 uid="uid://lqhis24b5sgv"]
 
 [ext_resource type="Texture2D" uid="uid://dj08t07ghfl0g" path="res://Background.png" id="1_58v8u"]
 [ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_uu1go"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://gvta1pp0vepk" path="res://monster_sheet.png" id="13_ot1gd"]
 [ext_resource type="Texture2D" uid="uid://bswbneyam7s55" path="res://elements/NatureElement.svg" id="14_ukgwx"]
 [ext_resource type="Script" path="res://scripts/Monster.gd" id="14_x2cdo"]
+[ext_resource type="AudioStream" uid="uid://bh571s2xo8ikw" path="res://funnysong.wav" id="17_83ipy"]
 
 [node name="Everything" type="Node2D"]
 
@@ -162,6 +163,12 @@ offset_top = 189.0
 offset_right = 345.0
 offset_bottom = 278.0
 text = "Book"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("17_83ipy")
+volume_db = -8.0
+autoplay = true
+panning_strength = 0.0
 
 [connection signal="pressed" from="RandomEnemyButton" to="Monsters/EnemyMonster" method="_on_button_pressed"]
 [connection signal="pressed" from="BookButton" to="Book" method="_on_book_button_pressed"]
