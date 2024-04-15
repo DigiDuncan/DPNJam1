@@ -1,6 +1,6 @@
 extends Sprite2D
 
-const FPS = 15
+const FPS = 7.5
 const FRAMES = 5
 var local_time: float = 0.0
 
