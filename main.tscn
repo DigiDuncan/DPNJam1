@@ -509,10 +509,10 @@ scale = Vector2(3, 3)
 texture = ExtResource("13_ot1gd")
 hframes = 10
 vframes = 10
-frame = 71
+frame = 76
 script = ExtResource("14_x2cdo")
 primary_type = 7
-secondary_type = 1
+secondary_type = 6
 
 [node name="AllyMonster" type="Sprite2D" parent="Monsters"]
 visible = false
@@ -523,10 +523,10 @@ scale = Vector2(-0.5, 0.5)
 texture = ExtResource("13_ot1gd")
 hframes = 10
 vframes = 10
-frame = 15
+frame = 36
 script = ExtResource("14_x2cdo")
-primary_type = 1
-secondary_type = 5
+primary_type = 3
+secondary_type = 6
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
