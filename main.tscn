@@ -125,6 +125,30 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector2(3, 3), Vector2(3, 3), Vector2(0.3, 0.3)]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Monsters/AllyMonster:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Monsters/AllyMonster:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
 
 [sub_resource type="Animation" id="Animation_dcngd"]
 resource_name = "EnemyGrow"
@@ -492,27 +516,28 @@ script = SubResource("GDScript_xbnlv")
 
 [node name="EnemyMonster" type="Sprite2D" parent="Monsters"]
 texture_filter = 1
-position = Vector2(636, 356.176)
-scale = Vector2(0.3, 0.3)
+position = Vector2(636, 275)
+scale = Vector2(3, 3)
 texture = ExtResource("13_ot1gd")
 hframes = 10
 vframes = 10
-frame = 36
+frame = 99
 script = ExtResource("14_x2cdo")
-primary_type = 3
-secondary_type = 6
+primary_type = 9
+secondary_type = 9
 
 [node name="AllyMonster" type="Sprite2D" parent="Monsters"]
+visible = false
 texture_filter = 1
 material = SubResource("ShaderMaterial_y4ps2")
-position = Vector2(639, 648)
-scale = Vector2(-0.5, 0.5)
+scale = Vector2(1e-05, 1e-05)
 texture = ExtResource("13_ot1gd")
 hframes = 10
 vframes = 10
-frame = 60
+frame = 96
 script = ExtResource("14_x2cdo")
-primary_type = 6
+primary_type = 9
+secondary_type = 6
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
