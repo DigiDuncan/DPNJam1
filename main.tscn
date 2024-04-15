@@ -505,14 +505,14 @@ script = SubResource("GDScript_xbnlv")
 [node name="EnemyMonster" type="Sprite2D" parent="Monsters"]
 texture_filter = 1
 position = Vector2(636, 275)
-scale = Vector2(0.3, 0.3)
+scale = Vector2(3, 3)
 texture = ExtResource("13_ot1gd")
 hframes = 10
 vframes = 10
-frame = 68
+frame = 71
 script = ExtResource("14_x2cdo")
-primary_type = 6
-secondary_type = 8
+primary_type = 7
+secondary_type = 1
 
 [node name="AllyMonster" type="Sprite2D" parent="Monsters"]
 visible = false
@@ -523,10 +523,10 @@ scale = Vector2(-0.5, 0.5)
 texture = ExtResource("13_ot1gd")
 hframes = 10
 vframes = 10
-frame = 93
+frame = 15
 script = ExtResource("14_x2cdo")
-primary_type = 9
-secondary_type = 3
+primary_type = 1
+secondary_type = 5
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -696,7 +696,7 @@ vertical_alignment = 1
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("17_83ipy")
-volume_db = -20.787
+volume_db = -14.228
 autoplay = true
 panning_strength = 0.0
 
