@@ -52,7 +52,6 @@ func battle_win(enemy: Monster):
 	enemy.random_enemy()
 	var time_in_seconds = 1
 	await get_tree().create_timer(time_in_seconds).timeout
-	$"../Monsters/AllyMonster".set_visible(false)
 	$"../WinLabel".set_visible(false)
 
 func _on_ally_monster_do_battle():
