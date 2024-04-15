@@ -56,10 +56,18 @@ func battle_win(enemy: Monster):
 
 func _on_ally_monster_do_battle():
 	rounds += 1
+	var anim = $"../AnimationPlayer"
+	anim.play("EnemyCharge")
 	
-	$"../AnimationPlayer".play("EnemyCharge")
-	$"../AnimationPlayer".play("AllyCharge")
+	var enemy: Monster = $"../Monsters/EnemyMonster"
+	var ally: Monster = $"../Monsters/AllyMonster"
 	
+	var likelyhood = ally.defend(enemy) * 1.2
+	
+	$"../WinLabel".text = "Chance To Win:\n%2d%%" % (likelyhood * 100)
+	$"../WinLabel".set_visible(true)
+
+func _on_animation_player_animation_finished(anim_name):
 	$"../RoundLabel".text = "ROUND %s" % rounds
 	
 	var enemy: Monster = $"../Monsters/EnemyMonster"
@@ -71,10 +79,13 @@ func _on_ally_monster_do_battle():
 
 	print("Likelyhood: ", likelyhood, " Roll: ", roll, " Win: ", win)
 	
-	$"../WinLabel".text = "Chance To Win:\n%2d%%" % (likelyhood * 100)
-	$"../WinLabel".set_visible(true)
+	$"../WinLabel".set_visible(false)
 	
-	if not win:
-		lose()
-	else:
-		battle_win(enemy)
+	ally.set_visible(false)
+	enemy.position = Vector2(636, 275)
+
+	if anim_name == "EnemyCharge":
+		if not win:
+			lose()
+		else:
+			battle_win(enemy)

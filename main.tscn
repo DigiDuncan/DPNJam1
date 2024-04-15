@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://lqhis24b5sgv"]
+[gd_scene load_steps=29 format=3 uid="uid://lqhis24b5sgv"]
 
 [ext_resource type="Texture2D" uid="uid://dj08t07ghfl0g" path="res://Background.png" id="1_58v8u"]
 [ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_uu1go"]
@@ -41,34 +41,6 @@ func _process(delta):
 shader = ExtResource("17_5nw4s")
 shader_parameter/blur_amount = 5.0
 
-[sub_resource type="Animation" id="Animation_r7o1m"]
-resource_name = "AllyCharge"
-length = 5.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Monsters/AllyMonster:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(2, 2.5, 3.5, 5),
-"transitions": PackedFloat32Array(0.420448, 0.0412346, 0.183011, 3.86375),
-"update": 0,
-"values": [Vector2(639, 648), Vector2(639, 748), Vector2(639, 748), Vector2(639, 448)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Monsters/AllyMonster:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.0001, 2, 3.5, 4.4),
-"transitions": PackedFloat32Array(0.203063, 0.203063, 6.9644, 1, 10.5561),
-"update": 0,
-"values": [Vector2(-0.5, 0.5), Vector2(-0.5, 0.5), Vector2(-5, 5), Vector2(-5, 5), Vector2(-1, 1)]
-}
-
 [sub_resource type="Animation" id="Animation_en8te"]
 resource_name = "AllyGrow"
 length = 2.0
@@ -100,7 +72,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_s7jxp"]
 resource_name = "EnemyCharge"
-length = 3.0
+length = 5.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -108,7 +80,7 @@ tracks/0/path = NodePath("Monsters/EnemyMonster:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1.5, 3),
+"times": PackedFloat32Array(2, 2.5, 3.5, 5),
 "transitions": PackedFloat32Array(0.0743255, 0.258817, 0.210224, 1),
 "update": 0,
 "values": [Vector2(636, 275), Vector2(636, 175), Vector2(636, 175), Vector2(636, 375)]
@@ -120,7 +92,7 @@ tracks/1/path = NodePath("Monsters/EnemyMonster:scale")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 1.5, 2.5),
+"times": PackedFloat32Array(2, 3.5, 4.5),
 "transitions": PackedFloat32Array(0.870551, 1, 12.5533),
 "update": 0,
 "values": [Vector2(3, 3), Vector2(3, 3), Vector2(0.3, 0.3)]
@@ -132,10 +104,10 @@ tracks/2/path = NodePath("Monsters/AllyMonster:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
+"times": PackedFloat32Array(2, 2.5, 3.5, 5),
+"transitions": PackedFloat32Array(0.420448, 0.0412346, 0.183011, 3.86375),
 "update": 0,
-"values": []
+"values": [Vector2(639, 648), Vector2(639, 748), Vector2(639, 748), Vector2(639, 448)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -144,10 +116,10 @@ tracks/3/path = NodePath("Monsters/AllyMonster:scale")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
+"times": PackedFloat32Array(0, 0.0001, 2, 3.5, 4.4),
+"transitions": PackedFloat32Array(0.203063, 0.203063, 6.9644, 1, 10.5561),
 "update": 0,
-"values": []
+"values": [Vector2(-0.5, 0.5), Vector2(-0.5, 0.5), Vector2(-5, 5), Vector2(-5, 5), Vector2(-1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_dcngd"]
@@ -168,7 +140,6 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_x18r6"]
 _data = {
-"AllyCharge": SubResource("Animation_r7o1m"),
 "AllyGrow": SubResource("Animation_en8te"),
 "EnemyCharge": SubResource("Animation_s7jxp"),
 "EnemyGrow": SubResource("Animation_dcngd")
@@ -521,23 +492,21 @@ scale = Vector2(3, 3)
 texture = ExtResource("13_ot1gd")
 hframes = 10
 vframes = 10
-frame = 99
+frame = 4
 script = ExtResource("14_x2cdo")
-primary_type = 9
-secondary_type = 9
+secondary_type = 4
 
 [node name="AllyMonster" type="Sprite2D" parent="Monsters"]
-visible = false
 texture_filter = 1
 material = SubResource("ShaderMaterial_y4ps2")
-scale = Vector2(1e-05, 1e-05)
+position = Vector2(639, 648)
+scale = Vector2(-0.5, 0.5)
 texture = ExtResource("13_ot1gd")
 hframes = 10
 vframes = 10
-frame = 96
+frame = 4
 script = ExtResource("14_x2cdo")
-primary_type = 9
-secondary_type = 6
+secondary_type = 4
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -714,5 +683,6 @@ panning_strength = 0.0
 [connection signal="pressed" from="Book/SummonButton" to="Monsters/AllyMonster" method="_on_summon_button_pressed"]
 [connection signal="pressed" from="Book/ClearButton" to="Book" method="_on_clear_button_pressed"]
 [connection signal="do_battle" from="Monsters/AllyMonster" to="GameManager" method="_on_ally_monster_do_battle"]
+[connection signal="animation_finished" from="AnimationPlayer" to="GameManager" method="_on_animation_player_animation_finished"]
 [connection signal="pressed" from="RandomEnemyButton" to="Monsters/EnemyMonster" method="_on_button_pressed"]
 [connection signal="pressed" from="BookButton" to="Book" method="_on_book_button_pressed"]
