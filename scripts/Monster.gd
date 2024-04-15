@@ -54,6 +54,7 @@ func _on_button_pressed():
 func _on_summon_button_pressed():
 	if not visible:
 		set_visible(true)
+		$"../../AnimationPlayer".play("AllyGrow")
 	var book: Book = $"../../Book"  # CRINGE
 	primary_type = book.primary_element
 	secondary_type = book.secondary_element
