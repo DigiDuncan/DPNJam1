@@ -18,6 +18,7 @@ func _process(delta):
 func lose():
 	$"../Popups/YouLost".set_visible(true)
 	$"../Sounds/Lose".play()
+	$"../Book".set_visible(false)
 	var time_in_seconds = 3
 	await get_tree().create_timer(time_in_seconds).timeout
 	get_tree().change_scene_to_file("res://menu.tscn")
@@ -25,6 +26,7 @@ func lose():
 func win():
 	$"../Popups/YouWon".set_visible(true)
 	$"../Sounds/Win".play()
+	$"../Book".set_visible(false)
 	var time_in_seconds = 3
 	await get_tree().create_timer(time_in_seconds).timeout
 	get_tree().change_scene_to_file("res://menu.tscn")
