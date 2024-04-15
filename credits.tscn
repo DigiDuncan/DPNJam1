@@ -1,0 +1,63 @@
+[gd_scene load_steps=4 format=3 uid="uid://dp2irg52we65p"]
+
+[ext_resource type="Script" path="res://BackButton.gd" id="1_epuso"]
+[ext_resource type="Texture2D" uid="uid://dj08t07ghfl0g" path="res://Background.png" id="2_mnarm"]
+[ext_resource type="Script" path="res://Background.gd" id="3_331wy"]
+
+[node name="Menu" type="Node2D"]
+
+[node name="TitleLabel" type="Label" parent="."]
+offset_top = -1.0
+offset_right = 1283.0
+offset_bottom = 287.0
+theme_override_font_sizes/font_size = 128
+text = "T.A.P.S."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubtitleLabel" type="Label" parent="."]
+offset_left = -3.0
+offset_top = 185.0
+offset_right = 1281.0
+offset_bottom = 285.0
+theme_override_font_sizes/font_size = 44
+text = "The Art of Pixel Summoning"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubtitleLabel2" type="Label" parent="."]
+offset_left = -3.0
+offset_top = 309.0
+offset_right = 1281.0
+offset_bottom = 621.0
+theme_override_font_sizes/font_size = 30
+text = "Concept by DefinitelyNotGes
+Programming by DigiDuncan and Arceus3251
+with help from DragonMoffon
+Pixel Art by Mikapara and Pakoopara
+Cartoon Art by JadeTheSlime
+with Animation by 4Bakers
+Music by Pakoopara"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackButton" type="Button" parent="."]
+offset_left = 461.0
+offset_top = 636.0
+offset_right = 800.0
+offset_bottom = 709.0
+theme_override_font_sizes/font_size = 42
+text = "BACK"
+script = ExtResource("1_epuso")
+
+[node name="Background" type="Sprite2D" parent="."]
+modulate = Color(0.65098, 0.65098, 0.65098, 1)
+z_index = -10
+position = Vector2(639, 381)
+scale = Vector2(0.368441, 0.368441)
+texture = ExtResource("2_mnarm")
+hframes = 5
+script = ExtResource("3_331wy")
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]
