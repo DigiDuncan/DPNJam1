@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://lqhis24b5sgv"]
+[gd_scene load_steps=31 format=3 uid="uid://lqhis24b5sgv"]
 
 [ext_resource type="Texture2D" uid="uid://dj08t07ghfl0g" path="res://Background.png" id="1_58v8u"]
 [ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_uu1go"]
@@ -22,6 +22,7 @@
 [ext_resource type="Script" path="res://YouGot.gd" id="19_5adlu"]
 [ext_resource type="Texture2D" uid="uid://bmm5ryjagoght" path="res://YouLost.png" id="19_f87h6"]
 [ext_resource type="Texture2D" uid="uid://cg6pcmrvvxxts" path="res://YouWon.png" id="20_bhgh1"]
+[ext_resource type="Texture2D" uid="uid://c227o2sh7u1oc" path="res://cloud.png" id="23_525wq"]
 
 [sub_resource type="GDScript" id="GDScript_xbnlv"]
 script/source = "extends Button
@@ -72,7 +73,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_s7jxp"]
 resource_name = "EnemyCharge"
-length = 5.0
+length = 6.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -121,6 +122,18 @@ tracks/3/keys = {
 "update": 0,
 "values": [Vector2(-0.5, 0.5), Vector2(-0.5, 0.5), Vector2(-5, 5), Vector2(-5, 5), Vector2(-1, 1)]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Smoke:emitting")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(3, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
 
 [sub_resource type="Animation" id="Animation_dcngd"]
 resource_name = "EnemyGrow"
@@ -144,6 +157,10 @@ _data = {
 "EnemyCharge": SubResource("Animation_s7jxp"),
 "EnemyGrow": SubResource("Animation_dcngd")
 }
+
+[sub_resource type="Gradient" id="Gradient_vsqva"]
+offsets = PackedFloat32Array(0.665236, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
 
 [node name="Everything" type="Node2D"]
 
@@ -679,6 +696,17 @@ stream = ExtResource("17_83ipy")
 volume_db = -20.787
 autoplay = true
 panning_strength = 0.0
+
+[node name="Smoke" type="CPUParticles2D" parent="."]
+position = Vector2(630, 412)
+texture = ExtResource("23_525wq")
+emission_shape = 1
+emission_sphere_radius = 1.0
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 21.43
+initial_velocity_max = 107.14
+color_ramp = SubResource("Gradient_vsqva")
 
 [connection signal="pressed" from="Book/SummonButton" to="Book" method="_on_summon_button_pressed"]
 [connection signal="pressed" from="Book/SummonButton" to="Monsters/AllyMonster" method="_on_summon_button_pressed"]
