@@ -6,3 +6,5 @@
 *.pck
 
 export_presets.cfg
+
+*.zip
