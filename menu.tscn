@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cac1cooti63vc"]
+[gd_scene load_steps=6 format=3 uid="uid://cac1cooti63vc"]
 
 [ext_resource type="Script" path="res://MainMenuButton.gd" id="1_8asid"]
 [ext_resource type="Texture2D" uid="uid://dj08t07ghfl0g" path="res://Background.png" id="1_n8p0p"]
 [ext_resource type="Script" path="res://CreditsButton.gd" id="2_d2gsq"]
 [ext_resource type="Script" path="res://Background.gd" id="2_j7lj6"]
+[ext_resource type="Texture2D" uid="uid://ddx2rn2wqjpo6" path="res://dpn.png" id="5_i2pop"]
 
 [node name="Menu" type="Node2D"]
 
@@ -53,6 +54,11 @@ texture = ExtResource("1_n8p0p")
 hframes = 5
 script = ExtResource("2_j7lj6")
 metadata/_edit_lock_ = true
+
+[node name="Dpn" type="Sprite2D" parent="."]
+position = Vector2(639, 653)
+scale = Vector2(0.123047, 0.123047)
+texture = ExtResource("5_i2pop")
 
 [connection signal="pressed" from="MainMenuButton" to="MainMenuButton" method="_on_pressed"]
 [connection signal="pressed" from="CreditsButton" to="CreditsButton" method="_on_pressed"]
