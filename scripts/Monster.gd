@@ -30,6 +30,7 @@ func _ready():
 func random_enemy():
 	primary_type = MonsterType.values()[randi() % MonsterType.size()]
 	secondary_type = MonsterType.values()[randi() % MonsterType.size()]
+	$"../../AnimationPlayer".play("EnemyGrow")
 	
 func compare_elements(defender: MonsterType, attacker: MonsterType):
 	var result = WIN_TABLE.table[defender][attacker]

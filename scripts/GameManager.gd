@@ -57,6 +57,7 @@ func battle_win(enemy: Monster):
 func _on_ally_monster_do_battle():
 	rounds += 1
 	
+	$"../AnimationPlayer".play("EnemyCharge")
 	$"../AnimationPlayer".play("AllyCharge")
 	
 	$"../RoundLabel".text = "ROUND %s" % rounds

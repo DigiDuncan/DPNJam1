@@ -98,22 +98,6 @@ tracks/1/keys = {
 "values": [Vector2(-0.421987, 0.441674), Vector2(-5, 5)]
 }
 
-[sub_resource type="Animation" id="Animation_dcngd"]
-resource_name = "Enemy Grow"
-length = 2.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Monsters/EnemyMonster:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 2),
-"transitions": PackedFloat32Array(0.148651, 5.27803),
-"update": 0,
-"values": [Vector2(0.3, 0.3), Vector2(3, 3)]
-}
-
 [sub_resource type="Animation" id="Animation_s7jxp"]
 resource_name = "EnemyCharge"
 length = 3.0
@@ -142,12 +126,28 @@ tracks/1/keys = {
 "values": [Vector2(3, 3), Vector2(3, 3), Vector2(0.3, 0.3)]
 }
 
+[sub_resource type="Animation" id="Animation_dcngd"]
+resource_name = "EnemyGrow"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Monsters/EnemyMonster:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(0.148651, 5.27803),
+"update": 0,
+"values": [Vector2(0.3, 0.3), Vector2(3, 3)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_x18r6"]
 _data = {
 "AllyCharge": SubResource("Animation_r7o1m"),
 "AllyGrow": SubResource("Animation_en8te"),
-"Enemy Grow": SubResource("Animation_dcngd"),
-"EnemyCharge": SubResource("Animation_s7jxp")
+"EnemyCharge": SubResource("Animation_s7jxp"),
+"EnemyGrow": SubResource("Animation_dcngd")
 }
 
 [node name="Everything" type="Node2D"]
@@ -493,27 +493,26 @@ script = SubResource("GDScript_xbnlv")
 [node name="EnemyMonster" type="Sprite2D" parent="Monsters"]
 texture_filter = 1
 position = Vector2(636, 356.176)
-scale = Vector2(1.41432, 1.41432)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("13_ot1gd")
 hframes = 10
 vframes = 10
-frame = 62
+frame = 36
 script = ExtResource("14_x2cdo")
-primary_type = 6
-secondary_type = 2
+primary_type = 3
+secondary_type = 6
 
 [node name="AllyMonster" type="Sprite2D" parent="Monsters"]
 texture_filter = 1
 material = SubResource("ShaderMaterial_y4ps2")
-position = Vector2(639, 448)
-scale = Vector2(-1, 1)
+position = Vector2(639, 648)
+scale = Vector2(-0.5, 0.5)
 texture = ExtResource("13_ot1gd")
 hframes = 10
 vframes = 10
-frame = 24
+frame = 60
 script = ExtResource("14_x2cdo")
-primary_type = 2
-secondary_type = 4
+primary_type = 6
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
