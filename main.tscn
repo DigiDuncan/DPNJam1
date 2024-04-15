@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://lqhis24b5sgv"]
+[gd_scene load_steps=34 format=3 uid="uid://lqhis24b5sgv"]
 
 [ext_resource type="Texture2D" uid="uid://dj08t07ghfl0g" path="res://Background.png" id="1_58v8u"]
 [ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_uu1go"]
@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://cg6pcmrvvxxts" path="res://YouWon.png" id="20_bhgh1"]
 [ext_resource type="Texture2D" uid="uid://c227o2sh7u1oc" path="res://cloud.png" id="23_525wq"]
 [ext_resource type="Script" path="res://Background.gd" id="24_4y0oo"]
+[ext_resource type="Script" path="res://HelpButton.gd" id="25_lw3r8"]
 
 [sub_resource type="GDScript" id="GDScript_xbnlv"]
 script/source = "extends Button
@@ -163,6 +164,9 @@ _data = {
 offsets = PackedFloat32Array(0.665236, 1)
 colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ofitq"]
+bg_color = Color(0, 0, 0, 0.258824)
+
 [node name="Everything" type="Node2D"]
 
 [node name="GameManager" type="Node" parent="."]
@@ -170,7 +174,8 @@ script = ExtResource("1_uu1go")
 
 [node name="Book" type="Node2D" parent="."]
 z_index = 2
-position = Vector2(210, 481)
+position = Vector2(174, 499)
+scale = Vector2(0.988024, 0.988024)
 script = ExtResource("3_mg51g")
 
 [node name="BookBackground" type="Sprite2D" parent="Book"]
@@ -531,6 +536,7 @@ libraries = {
 }
 
 [node name="Popups" type="Node2D" parent="."]
+z_index = 5
 
 [node name="YouGot" type="Node2D" parent="Popups"]
 visible = false
@@ -664,10 +670,11 @@ text = "Randomize Enemy
 (DEBUG)"
 
 [node name="BookButton" type="Button" parent="."]
-offset_left = 171.0
-offset_top = 233.0
-offset_right = 288.0
-offset_bottom = 278.0
+visible = false
+offset_left = 17.0
+offset_top = 264.0
+offset_right = 134.0
+offset_bottom = 309.0
 text = "Book"
 
 [node name="RoundLabel" type="Label" parent="."]
@@ -709,7 +716,7 @@ initial_velocity_min = 21.43
 initial_velocity_max = 107.14
 color_ramp = SubResource("Gradient_vsqva")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
 z_index = -10
 position = Vector2(639, 381)
 scale = Vector2(0.368441, 0.368441)
@@ -718,6 +725,32 @@ hframes = 5
 script = ExtResource("24_4y0oo")
 metadata/_edit_lock_ = true
 
+[node name="HelpButton" type="Button" parent="."]
+offset_left = 1214.0
+offset_top = 13.0
+offset_right = 1266.0
+offset_bottom = 63.0
+theme_override_font_sizes/font_size = 30
+text = "?"
+script = ExtResource("25_lw3r8")
+
+[node name="HelpLabel" type="Label" parent="HelpButton"]
+visible = false
+offset_left = -291.0
+offset_top = 58.0
+offset_right = 59.0
+offset_bottom = 297.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_ofitq")
+text = "- Guess what two elements the enemy is composed of.
+- WIth the elements you have, try to make the best match up!
+- If you win, you'll get an element the enemy is made of!
+- If you lose, you're out of the tournament!
+- Fight a monster with all ten elements unlocked to win!"
+autowrap_mode = 3
+
 [connection signal="pressed" from="Book/SummonButton" to="Book" method="_on_summon_button_pressed"]
 [connection signal="pressed" from="Book/SummonButton" to="Monsters/AllyMonster" method="_on_summon_button_pressed"]
 [connection signal="pressed" from="Book/ClearButton" to="Book" method="_on_clear_button_pressed"]
@@ -725,3 +758,4 @@ metadata/_edit_lock_ = true
 [connection signal="animation_finished" from="AnimationPlayer" to="GameManager" method="_on_animation_player_animation_finished"]
 [connection signal="pressed" from="RandomEnemyButton" to="Monsters/EnemyMonster" method="_on_button_pressed"]
 [connection signal="pressed" from="BookButton" to="Book" method="_on_book_button_pressed"]
+[connection signal="pressed" from="HelpButton" to="HelpButton" method="_on_pressed"]

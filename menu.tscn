@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://dp2irg52we65p"]
+
+[ext_resource type="Script" path="res://MainMenuButton.gd" id="1_8asid"]
+[ext_resource type="Texture2D" uid="uid://dj08t07ghfl0g" path="res://Background.png" id="1_n8p0p"]
+[ext_resource type="Script" path="res://Background.gd" id="2_j7lj6"]
+
+[node name="Menu" type="Node2D"]
+
+[node name="TitleLabel" type="Label" parent="."]
+offset_top = -1.0
+offset_right = 1283.0
+offset_bottom = 287.0
+theme_override_font_sizes/font_size = 128
+text = "T.A.P.S."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubtitleLabel" type="Label" parent="."]
+offset_left = -3.0
+offset_top = 185.0
+offset_right = 1281.0
+offset_bottom = 285.0
+theme_override_font_sizes/font_size = 44
+text = "The Art of Pixel Summoning"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MainMenuButton" type="Button" parent="."]
+offset_left = 461.0
+offset_top = 426.0
+offset_right = 800.0
+offset_bottom = 499.0
+theme_override_font_sizes/font_size = 42
+text = "START GAME"
+script = ExtResource("1_8asid")
+
+[node name="Background" type="Sprite2D" parent="."]
+modulate = Color(0.65098, 0.65098, 0.65098, 1)
+z_index = -10
+position = Vector2(639, 381)
+scale = Vector2(0.368441, 0.368441)
+texture = ExtResource("1_n8p0p")
+hframes = 5
+script = ExtResource("2_j7lj6")
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="MainMenuButton" to="MainMenuButton" method="_on_pressed"]

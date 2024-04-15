@@ -19,13 +19,13 @@ func lose():
 	$"../Popups/YouLost".set_visible(true)
 	var time_in_seconds = 3
 	await get_tree().create_timer(time_in_seconds).timeout
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://menu.tscn")
 	
 func win():
 	$"../Popups/YouWon".set_visible(true)
 	var time_in_seconds = 3
 	await get_tree().create_timer(time_in_seconds).timeout
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://menu.tscn")
 	
 func show_element_modal(element: Monster.MonsterType):
 	var popup = $"../Popups/YouGot"
@@ -53,8 +53,10 @@ func battle_win(enemy: Monster):
 	var time_in_seconds = 1
 	await get_tree().create_timer(time_in_seconds).timeout
 	$"../WinLabel".set_visible(false)
+	book.set_visible(true)
 
 func _on_ally_monster_do_battle():
+	var book: Book = $"../Book"
 	rounds += 1
 	var anim = $"../AnimationPlayer"
 	anim.play("EnemyCharge")
@@ -66,6 +68,7 @@ func _on_ally_monster_do_battle():
 	
 	$"../WinLabel".text = "Chance To Win:\n%2d%%" % (likelyhood * 100)
 	$"../WinLabel".set_visible(true)
+	book.set_visible(false)
 
 func _on_animation_player_animation_finished(anim_name):
 	$"../RoundLabel".text = "ROUND %s" % rounds
