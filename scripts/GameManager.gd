@@ -17,12 +17,14 @@ func _process(delta):
 	
 func lose():
 	$"../Popups/YouLost".set_visible(true)
+	$"../Sounds/Lose".play()
 	var time_in_seconds = 3
 	await get_tree().create_timer(time_in_seconds).timeout
 	get_tree().change_scene_to_file("res://menu.tscn")
 	
 func win():
 	$"../Popups/YouWon".set_visible(true)
+	$"../Sounds/Win".play()
 	var time_in_seconds = 3
 	await get_tree().create_timer(time_in_seconds).timeout
 	get_tree().change_scene_to_file("res://menu.tscn")
@@ -34,6 +36,7 @@ func show_element_modal(element: Monster.MonsterType):
 		popup.icon_nodes[element_idx].set_visible(show == element)
 	popup.set_visible(true)
 	var time_in_seconds = 3
+	$"../Sounds/ElementGet".play()
 	await get_tree().create_timer(time_in_seconds).timeout
 	popup.set_visible(false)
 	
@@ -54,6 +57,7 @@ func battle_win(enemy: Monster):
 	await get_tree().create_timer(time_in_seconds).timeout
 	$"../WinLabel".set_visible(false)
 	book.set_visible(true)
+	$"../Sounds/Book".play()
 
 func _on_ally_monster_do_battle():
 	var book: Book = $"../Book"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://lqhis24b5sgv"]
+[gd_scene load_steps=41 format=3 uid="uid://lqhis24b5sgv"]
 
 [ext_resource type="Texture2D" uid="uid://dj08t07ghfl0g" path="res://Background.png" id="1_58v8u"]
 [ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_uu1go"]
@@ -25,6 +25,13 @@
 [ext_resource type="Texture2D" uid="uid://c227o2sh7u1oc" path="res://cloud.png" id="23_525wq"]
 [ext_resource type="Script" path="res://Background.gd" id="24_4y0oo"]
 [ext_resource type="Script" path="res://HelpButton.gd" id="25_lw3r8"]
+[ext_resource type="Script" path="res://Sounds.gd" id="26_7kt0u"]
+[ext_resource type="AudioStream" uid="uid://dwep0xvmn080l" path="res://sounds/summon.wav" id="27_0wqfb"]
+[ext_resource type="AudioStream" uid="uid://clh1pw880eevk" path="res://sounds/gmod.mp3" id="28_kpyo7"]
+[ext_resource type="AudioStream" uid="uid://cm01t46alu3qq" path="res://sounds/element_get.mp3" id="29_8wm4t"]
+[ext_resource type="AudioStream" uid="uid://dbtt0i5lnbsxa" path="res://sounds/pageturn.mp3" id="30_aljh6"]
+[ext_resource type="AudioStream" uid="uid://bcrh65u0ecd44" path="res://sounds/boowomp.mp3" id="31_03w3e"]
+[ext_resource type="AudioStream" uid="uid://de2vofmoixilw" path="res://sounds/cheer.mp3" id="32_txkd7"]
 
 [sub_resource type="GDScript" id="GDScript_xbnlv"]
 script/source = "extends Button
@@ -132,6 +139,18 @@ tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(3.9, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Sounds/GMod:playing")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(3.8, 5.9),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -698,7 +717,7 @@ NN%"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("17_83ipy")
 volume_db = -14.228
 autoplay = true
@@ -751,8 +770,33 @@ text = "- Guess what two elements the enemy is composed of.
 - Fight a monster with all ten elements unlocked to win!"
 autowrap_mode = 3
 
+[node name="Sounds" type="Node2D" parent="."]
+script = ExtResource("26_7kt0u")
+
+[node name="Summon" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("27_0wqfb")
+
+[node name="GMod" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("28_kpyo7")
+
+[node name="ElementGet" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("29_8wm4t")
+volume_db = -8.548
+
+[node name="Book" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("30_aljh6")
+
+[node name="Lose" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("31_03w3e")
+volume_db = 7.836
+
+[node name="Win" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("32_txkd7")
+volume_db = -8.678
+
 [connection signal="pressed" from="Book/SummonButton" to="Book" method="_on_summon_button_pressed"]
 [connection signal="pressed" from="Book/SummonButton" to="Monsters/AllyMonster" method="_on_summon_button_pressed"]
+[connection signal="pressed" from="Book/SummonButton" to="Sounds" method="_on_summon_button_pressed"]
 [connection signal="pressed" from="Book/ClearButton" to="Book" method="_on_clear_button_pressed"]
 [connection signal="do_battle" from="Monsters/AllyMonster" to="GameManager" method="_on_ally_monster_do_battle"]
 [connection signal="animation_finished" from="AnimationPlayer" to="GameManager" method="_on_animation_player_animation_finished"]
