@@ -766,7 +766,7 @@ theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_ofitq")
 text = "- Guess what two elements the enemy is composed of.
-- WIth the elements you have, try to make the best match up!
+- With the elements you have, try to make the best match up!
 - If you win, you'll get an element the enemy is made of!
 - If you lose, you're out of the tournament!
 - Fight a monster with all ten elements unlocked to win!"
