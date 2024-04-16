@@ -56,11 +56,10 @@ script = ExtResource("1_epuso")
 modulate = Color(0.65098, 0.65098, 0.65098, 1)
 z_index = -10
 position = Vector2(639, 381)
-scale = Vector2(0.368441, 0.368441)
+scale = Vector2(0.75, 0.75)
 texture = ExtResource("2_mnarm")
 hframes = 5
 script = ExtResource("3_331wy")
-metadata/_edit_lock_ = true
 
 [node name="Dpn" type="Sprite2D" parent="."]
 position = Vector2(629, 231)
