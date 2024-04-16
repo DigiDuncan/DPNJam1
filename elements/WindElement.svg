@@ -1,13 +1,23 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<!-- Created using Krita: https://krita.org -->
-<svg xmlns="http://www.w3.org/2000/svg" 
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:krita="http://krita.org/namespaces/svg/krita"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-    width="1474.56pt"
-    height="1474.56pt"
-    viewBox="0 0 1474.56 1474.56">
-<defs/>
-<path id="shape0" transform="translate(155.428293974172, 292.974213071599)" fill="none" stroke="#bef1ff" stroke-width="57.6" stroke-linecap="square" stroke-linejoin="bevel" d="M1070.01 396.786C1100.3 331.683 1149.2 -5.40274 821.612 0.0657906C756 -2.81421 928.92 181.613 794.75 265.533C530.951 430.533 1.56903 270.348 0.0917075 270.786C-6.40478 272.71 333.387 566.229 658.172 585.426C986.441 604.828 1039.73 461.889 1070.01 396.786Z" sodipodi:nodetypes="ccsssz"/><path id="shape1" transform="translate(136.785501530576, 684.401472455122)" fill="none" stroke="#bef1ff" stroke-width="57.6" stroke-linecap="square" stroke-linejoin="bevel" d="M1085.77 478.399C1165.23 440.216 1373.31 203.742 1182.97 9.67853C1162.23 -3.85819 1170.4 196.804 913.709 272.383C518.242 388.822 46.1703 18.6384 10.0945 1.75854C-63.2282 -32.5491 275.019 445.816 631.454 503.599C981.905 560.411 1055 493.186 1085.77 478.399Z" sodipodi:nodetypes="ccssss"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="Layer_1" xmlns:krita="http://krita.org/namespaces/svg/krita" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1474.6 1474.6"
+	 style="enable-background:new 0 0 1474.6 1474.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#00133F;stroke-width:150;stroke-linecap:square;stroke-linejoin:bevel;}
+	.st1{fill:none;stroke:#C7DCD0;stroke-width:57.6;stroke-linecap:square;stroke-linejoin:bevel;}
+</style>
+<g id="shape0" sodipodi:nodetypes="ccsssz">
+	<path class="st0" d="M1225.1,556.9c0-72.4-15.2-295.9-268.1-295.9c-65.6-2.9,83.9,189.6-50.2,273.5c-263.8,165-769.8-3.2-771.3-2.8
+		c-6.5,1.9,365.6,321.1,668.2,321.1C1174.3,852.9,1225.1,664.5,1225.1,556.9z"/>
+	<path class="st1" d="M1225.1,556.9c0-72.4-15.2-295.9-268.1-295.9c-65.6-2.9,83.9,189.6-50.2,273.5c-263.8,165-769.8-3.2-771.3-2.8
+		c-6.5,1.9,365.6,321.1,668.2,321.1C1174.3,852.9,1225.1,664.5,1225.1,556.9z"/>
+</g>
+<g id="shape1" sodipodi:nodetypes="ccssss">
+	<path class="st0" d="M876.8,1204.2c393.3,0,538.9-222.8,443-509.1c-15.5-36.6-12.6,187.1-269.3,262.7
+		C655,1074.2,183,704,146.9,687.2C73.6,652.9,384.1,1204.2,876.8,1204.2z"/>
+	<path class="st1" d="M876.8,1204.2c393.3,0,538.9-222.8,443-509.1c-15.5-36.6-12.6,187.1-269.3,262.7
+		C655,1074.2,183,704,146.9,687.2C73.6,652.9,384.1,1204.2,876.8,1204.2z"/>
+</g>
 </svg>

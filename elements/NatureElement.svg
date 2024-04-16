@@ -1,13 +1,32 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<!-- Created using Krita: https://krita.org -->
-<svg xmlns="http://www.w3.org/2000/svg" 
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:krita="http://krita.org/namespaces/svg/krita"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-    width="1474.56pt"
-    height="1474.56pt"
-    viewBox="0 0 1474.56 1474.56">
-<defs/>
-<path id="shape0" transform="matrix(0.712275352532946 -0.70190015114265 0.70190015114265 0.712275352532946 -14.8411679829719 517.187928287393)" fill="none" stroke="#1dae00" stroke-width="57.6" stroke-linecap="square" stroke-linejoin="bevel" d="M702.298 697.947C655.128 373.298 472.015 107.539 363.097 0C252.716 109.361 21.9919 370.563 0.983217 697.947C-16.2542 966.562 196.657 1151.14 364.77 1207.84C541.353 1169.78 755.529 1064.31 702.298 697.947Z" sodipodi:nodetypes="ccscs"/><path id="shape1" transform="translate(439.208781706239, 474.912602767851)" fill="none" stroke="#1dae00" stroke-width="57.6" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" d="M64.0712 38.8974C102.861 64.9974 -18.7288 -17.7126 2.51119 3.52736C236.348 125.556 507.816 443.107 644.801 656.278C731.408 685.183 785.208 932.291 773.991 888.047" sodipodi:nodetypes="cccc"/><path id="shape2" transform="translate(520.922757336203, 518.841342360219)" fill="none" stroke="#1dae00" stroke-width="57.6" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" d="M5.57724 182.259C-25.9721 199.059 84.6955 139.872 128.073 114.014C151.74 75.2871 226.11 -23.5192 205.017 5.13865" sodipodi:nodetypes="ccc"/><path id="shape3" transform="translate(618.898137909186, 616.768420226254)" fill="none" stroke="#1dae00" stroke-width="57.6" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" d="M7.86186 241.633C-37.4025 262.628 124.825 189.513 187.67 147.841C227.845 98.4983 293.878 -14.7685 283.892 1.60319" sodipodi:nodetypes="ccc"/><path id="shape4" transform="translate(713.88962460274, 765.527906267504)" fill="none" stroke="#1dae00" stroke-width="57.6" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" d="M7.55038 250.392C-42.6899 266.763 171.808 197.151 237.467 168.715C265.978 114.273 346.029 -16.0284 335.33 1.63206" sodipodi:nodetypes="ccc"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="Layer_1" xmlns:krita="http://krita.org/namespaces/svg/krita" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1474.6 1474.6"
+	 style="enable-background:new 0 0 1474.6 1474.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#00133F;stroke-width:150;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;}
+	.st1{fill:none;stroke:#1EBC73;stroke-width:57.6;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;}
+	.st2{fill:none;stroke:#00133F;stroke-width:150;stroke-linecap:round;stroke-miterlimit:2;}
+	.st3{fill:none;stroke:#1EBC73;stroke-width:57.6;stroke-linecap:round;stroke-miterlimit:2;}
+</style>
+<g id="shape0" sodipodi:nodetypes="ccscs">
+	<path class="st0" d="M983.6,505.2C749.7,327.9,463,276.8,297.4,264.5c-29.2-2.2-53.9,21.3-53.3,50.6
+		c3.7,172,23.6,494.7,216.7,717.6c175,202,468.5,166.7,628.6,90.5c2.3-1.1,4.2-2.8,5.6-4.9C1192.9,967.2,1276.6,727.2,983.6,505.2z"
+		/>
+	<path class="st1" d="M983.6,505.2C749.7,327.9,463,276.8,297.4,264.5c-29.2-2.2-53.9,21.3-53.3,50.6
+		c3.7,172,23.6,494.7,216.7,717.6c175,202,468.5,166.7,628.6,90.5c2.3-1.1,4.2-2.8,5.6-4.9C1192.9,967.2,1276.6,727.2,983.6,505.2z"
+		/>
+</g>
+<g id="shape1_00000019649689657225793080000000731575931473354931_" sodipodi:nodetypes="cccc">
+	<path class="st2" d="M463,502.9c75.9,39.6,131.1,74.3,192,127.1c0.8,0.7,73.6-84.6,78.2-80.4c2.7,2.5-74,84.1-73.1,84.9
+		c24.6,21.6,50.3,46.2,78.8,75.4c0.3,0.3-165.9,101.5-159.4,108c6,6.1,161.3-106.1,161.7-105.7c27.1,27.9,93.7,96.8,120.2,126.9
+		c0.6,0.6,111.2-87,113.3-84.5c3.7,4.5-110.9,87.2-110.5,87.7c12.3,14.1,24.6,28.4,36.7,42.8c0.2,0.2-158.6,94.9-154.5,97.7
+		c10,6.7,155.3-96.7,155.5-96.5c72.1,81.3,129.8,164,175.9,235.2c2.1,3.3,4.3,6.6,6.3,9.8c75.9,119.7,89.6,140,133.1,236.5"/>
+	<path class="st3" d="M463,502.9c75.9,39.6,131.1,74.3,192,127.1c0.8,0.7,73.6-84.6,78.2-80.4c2.7,2.5-74,84.1-73.1,84.9
+		c24.6,21.6,50.3,46.2,78.8,75.4c0.3,0.3-165.9,101.5-159.4,108c6,6.1,161.3-106.1,161.7-105.7c27.1,27.9,93.7,96.8,120.2,126.9
+		c0.6,0.6,111.2-87,113.3-84.5c3.7,4.5-110.9,87.2-110.5,87.7c12.3,14.1,24.6,28.4,36.7,42.8c0.2,0.2-158.6,94.9-154.5,97.7
+		c10,6.7,155.3-96.7,155.5-96.5c72.1,81.3,129.8,164,175.9,235.2c2.1,3.3,4.3,6.6,6.3,9.8c75.9,119.7,89.6,140,133.1,236.5"/>
+</g>
+<path class="st3" d="M963.4,1166.2c107.1-24.2,161.4-73.2,191.5-162.6"/>
 </svg>

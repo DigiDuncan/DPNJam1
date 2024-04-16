@@ -1,13 +1,33 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<!-- Created using Krita: https://krita.org -->
-<svg xmlns="http://www.w3.org/2000/svg" 
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:krita="http://krita.org/namespaces/svg/krita"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-    width="1474.56pt"
-    height="1474.56pt"
-    viewBox="0 0 1474.56 1474.56">
-<defs/>
-<path id="shape0" transform="translate(118.799995279327, 161.640022873806)" fill="none" stroke="#fffeeb" stroke-width="57.6" stroke-linecap="square" stroke-linejoin="bevel" d="M618.48 0L766.8 421.2L1263.6 575.64L760.32 699.84L618.48 1177.2L468.72 702L0 575.64L475.2 419.04Z" sodipodi:nodetypes="ccccccccc"/><path id="shape1" transform="translate(244.079990301163, 237.599990558654)" fill="none" stroke="#fffeeb" stroke-width="57.6" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" d="M0 0L228.041 228.041" sodipodi:nodetypes="cc"/><path id="shape2" transform="translate(991.439960603839, 210.403927947603)" fill="none" stroke="#fffeeb" stroke-width="57.6" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" d="M0 241.036L241.036 0" sodipodi:nodetypes="cc"/><path id="shape3" transform="translate(987.119960775499, 963.359961719634)" fill="none" stroke="#fffeeb" stroke-width="57.6" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" d="M0 0L305.962 305.962" sodipodi:nodetypes="cc"/><path id="shape4" transform="translate(186.44458513405, 967.679961547973)" fill="none" stroke="#fffeeb" stroke-width="57.6" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" d="M286.595 0L0 288.035" sodipodi:nodetypes="cc"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="Layer_1" xmlns:krita="http://krita.org/namespaces/svg/krita" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1474.6 1474.6"
+	 style="enable-background:new 0 0 1474.6 1474.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#071942;stroke-width:150;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:none;stroke:#D4E6EE;stroke-width:57.6;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:none;stroke:#071942;stroke-width:150;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;}
+	.st3{fill:none;stroke:#D4E6EE;stroke-width:57.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;}
+</style>
+<g id="shape0" sodipodi:nodetypes="ccccccccc">
+	<polygon class="st0" points="724,167.6 872.3,588.8 1369.1,743.2 865.8,867.4 724,1344.8 574.2,869.6 105.5,743.2 580.7,586.6 	"/>
+	<polygon class="st1" points="724,167.6 872.3,588.8 1369.1,743.2 865.8,867.4 724,1344.8 574.2,869.6 105.5,743.2 580.7,586.6 	"/>
+</g>
+<g>
+	<line class="st2" x1="144.3" y1="1330.3" x2="451.3" y2="1023.2"/>
+	<line class="st3" x1="144.3" y1="1330.3" x2="451.3" y2="1023.2"/>
+</g>
+<g>
+	<line class="st2" x1="1330.8" y1="1330.8" x2="1023.7" y2="1023.7"/>
+	<line class="st3" x1="1330.8" y1="1330.8" x2="1023.7" y2="1023.7"/>
+</g>
+<g>
+	<line class="st2" x1="1329.5" y1="145.1" x2="1022.4" y2="452.2"/>
+	<line class="st3" x1="1329.5" y1="145.1" x2="1022.4" y2="452.2"/>
+</g>
+<g>
+	<line class="st2" x1="146.5" y1="146.5" x2="453.5" y2="453.5"/>
+	<line class="st3" x1="146.5" y1="146.5" x2="453.5" y2="453.5"/>
+</g>
 </svg>

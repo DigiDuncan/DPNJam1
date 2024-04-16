@@ -1,13 +1,23 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<!-- Created using Krita: https://krita.org -->
-<svg xmlns="http://www.w3.org/2000/svg" 
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:krita="http://krita.org/namespaces/svg/krita"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-    width="1474.56pt"
-    height="1474.56pt"
-    viewBox="0 0 1474.56 1474.56">
-<defs/>
-<circle id="shape0" transform="translate(663.120005407315, 257.040002832403)" r="311.04" cx="311.04" cy="311.04" fill="none" stroke="#0f0027" stroke-width="57.6" stroke-linecap="square" stroke-linejoin="bevel"/><path id="shape1" transform="translate(206.985935143855, 265.220612838656)" fill="none" stroke="#0f0027" stroke-width="57.6" stroke-linecap="square" stroke-linejoin="bevel" d="M434.534 17.7394C468.022 -42.6927 181.644 55.3845 69.6085 249.456C-62.5658 478.412 11.703 751.653 140.774 883.899C269.845 1016.15 565.451 1112.74 829.619 1024.05C1093.79 935.359 1179.68 508.966 1089.01 581.499C982.16 720.022 599.824 771.779 453.774 586.087C323.512 428.574 326.478 188.439 434.534 17.7394Z" sodipodi:nodetypes="cszzccc"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="Layer_1" xmlns:krita="http://krita.org/namespaces/svg/krita" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1474.6 1474.6"
+	 style="enable-background:new 0 0 1474.6 1474.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#00133F;stroke-width:150;stroke-linecap:square;stroke-linejoin:bevel;}
+	.st1{fill:none;stroke:#070012;stroke-width:57.6;stroke-linecap:square;stroke-linejoin:bevel;}
+</style>
+<g id="shape0">
+	<circle class="st0" cx="974.2" cy="568.1" r="311"/>
+	<circle class="st1" cx="974.2" cy="568.1" r="311"/>
+</g>
+<g id="shape1" sodipodi:nodetypes="cszzccc">
+	<path class="st0" d="M641.5,283c33.5-60.4-252.9,37.6-364.9,231.7c-132.2,229-57.9,502.2,71.2,634.4
+		c129.1,132.3,424.7,228.8,688.8,140.2c264.2-88.7,350.1-515.1,259.4-442.6c-106.9,138.5-489.2,190.3-635.2,4.6
+		C530.5,693.8,533.5,453.7,641.5,283z"/>
+	<path class="st1" d="M641.5,283c33.5-60.4-252.9,37.6-364.9,231.7c-132.2,229-57.9,502.2,71.2,634.4
+		c129.1,132.3,424.7,228.8,688.8,140.2c264.2-88.7,350.1-515.1,259.4-442.6c-106.9,138.5-489.2,190.3-635.2,4.6
+		C530.5,693.8,533.5,453.7,641.5,283z"/>
+</g>
 </svg>

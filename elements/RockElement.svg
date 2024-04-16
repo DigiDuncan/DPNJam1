@@ -1,13 +1,19 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<!-- Created using Krita: https://krita.org -->
-<svg xmlns="http://www.w3.org/2000/svg" 
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:krita="http://krita.org/namespaces/svg/krita"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-    width="1474.56pt"
-    height="1474.56pt"
-    viewBox="0 0 1474.56 1474.56">
-<defs/>
-<path id="shape0" transform="translate(196.559992189427, 341.279986438785)" fill="none" stroke="#834413" stroke-width="57.6" stroke-linecap="square" stroke-linejoin="bevel" d="M108 185.76L0 773.28L656.64 1019.52L1090.8 801.36L1036.8 352.08L743.04 317.52L518.4 0Z" sodipodi:nodetypes="cccccccc"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="Layer_1" xmlns:krita="http://krita.org/namespaces/svg/krita" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1474.6 1474.6"
+	 style="enable-background:new 0 0 1474.6 1474.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#00133F;stroke-width:150;stroke-linecap:square;stroke-linejoin:bevel;}
+	.st1{fill:none;stroke:#966C6C;stroke-width:57.6;stroke-linecap:square;stroke-linejoin:bevel;}
+</style>
+<g id="shape0" sodipodi:nodetypes="cccccccc">
+	<path class="st0" d="M298.2,561.8l-91.4,497.1c-5.9,32.2,12.1,64,42.8,75.5l576,216c17.6,6.6,37.3,5.6,54.1-2.9l365.3-183.6
+		c25.5-12.8,40.2-40.2,36.8-68.5l-42-349.3c-3.7-31-28.2-55.4-59.2-59.1l-211-24.8c-19-2.2-36.2-12.5-47.3-28.1l-175-247.4
+		c-18.7-26.4-53.6-35.9-83.1-22.5L336.8,512.5C316.6,521.6,302.2,540,298.2,561.8z"/>
+	<path class="st1" d="M298.2,561.8l-91.4,497.1c-5.9,32.2,12.1,64,42.8,75.5l576,216c17.6,6.6,37.3,5.6,54.1-2.9l365.3-183.6
+		c25.5-12.8,40.2-40.2,36.8-68.5l-42-349.3c-3.7-31-28.2-55.4-59.2-59.1l-211-24.8c-19-2.2-36.2-12.5-47.3-28.1l-175-247.4
+		c-18.7-26.4-53.6-35.9-83.1-22.5L336.8,512.5C316.6,521.6,302.2,540,298.2,561.8z"/>
+</g>
 </svg>
