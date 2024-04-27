@@ -6,6 +6,7 @@ class_name GameManager extends Node
 
 var rounds: int = 1
 var game_over: bool = false
+var lives: int = 3
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
