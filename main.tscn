@@ -531,10 +531,10 @@ scale = Vector2(3, 3)
 texture = ExtResource("13_ot1gd")
 hframes = 10
 vframes = 10
-frame = 39
+frame = 37
 script = ExtResource("14_x2cdo")
 primary_type = 3
-secondary_type = 9
+secondary_type = 7
 
 [node name="AllyMonster" type="Sprite2D" parent="Monsters"]
 visible = false
@@ -545,10 +545,222 @@ scale = Vector2(-0.5, 0.5)
 texture = ExtResource("13_ot1gd")
 hframes = 10
 vframes = 10
-frame = 75
+frame = 51
 script = ExtResource("14_x2cdo")
-primary_type = 7
-secondary_type = 5
+primary_type = 5
+secondary_type = 1
+
+[node name="MonsterIcons" type="Node2D" parent="."]
+position = Vector2(229, 49)
+scale = Vector2(0.642664, 0.642664)
+
+[node name="PrimaryIcon" type="Node2D" parent="MonsterIcons"]
+position = Vector2(840, 376)
+scale = Vector2(1.76369, 1.76369)
+
+[node name="WATER" type="TextureRect" parent="MonsterIcons/PrimaryIcon"]
+visible = false
+offset_left = -190.0
+offset_top = -183.0
+offset_right = 1776.0
+offset_bottom = 1783.0
+scale = Vector2(0.0404366, 0.0378162)
+tooltip_text = "Water"
+texture = ExtResource("5_vawco")
+
+[node name="FIRE" type="TextureRect" parent="MonsterIcons/PrimaryIcon"]
+visible = false
+offset_left = -193.0
+offset_top = -186.0
+offset_right = 1773.0
+offset_bottom = 1780.0
+scale = Vector2(0.0422327, 0.0405568)
+tooltip_text = "Fire"
+texture = ExtResource("6_4hehq")
+
+[node name="POISON" type="TextureRect" parent="MonsterIcons/PrimaryIcon"]
+visible = false
+offset_left = -197.0
+offset_top = -174.0
+offset_right = 1769.0
+offset_bottom = 1792.0
+scale = Vector2(0.0445942, 0.0391277)
+tooltip_text = "Poison"
+texture = ExtResource("7_7mgl6")
+
+[node name="ICE" type="TextureRect" parent="MonsterIcons/PrimaryIcon"]
+visible = false
+offset_left = -192.0
+offset_top = -178.0
+offset_right = 1774.0
+offset_bottom = 1788.0
+scale = Vector2(0.0382749, 0.0377697)
+tooltip_text = "Ice"
+texture = ExtResource("8_co2ta")
+
+[node name="LIGHTNING" type="TextureRect" parent="MonsterIcons/PrimaryIcon"]
+visible = false
+offset_left = -199.0
+offset_top = -189.0
+offset_right = 1767.0
+offset_bottom = 1777.0
+scale = Vector2(0.0455611, 0.0482571)
+tooltip_text = "Lightning"
+texture = ExtResource("9_2vxao")
+
+[node name="DARK" type="TextureRect" parent="MonsterIcons/PrimaryIcon"]
+visible = false
+offset_left = -201.0
+offset_top = -185.0
+offset_right = 1765.0
+offset_bottom = 1781.0
+scale = Vector2(0.0437176, 0.0448187)
+tooltip_text = "Dark"
+texture = ExtResource("10_xtao3")
+
+[node name="LIGHT" type="TextureRect" parent="MonsterIcons/PrimaryIcon"]
+visible = false
+offset_left = -188.0
+offset_top = -177.0
+offset_right = 1778.0
+offset_bottom = 1789.0
+scale = Vector2(0.037981, 0.036621)
+tooltip_text = "Light"
+texture = ExtResource("11_od36y")
+
+[node name="WIND" type="TextureRect" parent="MonsterIcons/PrimaryIcon"]
+visible = false
+offset_left = -192.0
+offset_top = -181.0
+offset_right = 1774.0
+offset_bottom = 1785.0
+scale = Vector2(0.0392748, 0.0430299)
+tooltip_text = "Wind"
+texture = ExtResource("12_ddr0i")
+
+[node name="ROCK" type="TextureRect" parent="MonsterIcons/PrimaryIcon"]
+visible = false
+offset_left = -188.0
+offset_top = -166.0
+offset_right = 1778.0
+offset_bottom = 1800.0
+scale = Vector2(0.0378922, 0.0275868)
+tooltip_text = "Rock"
+texture = ExtResource("13_0l11p")
+
+[node name="NATURE" type="TextureRect" parent="MonsterIcons/PrimaryIcon"]
+visible = false
+offset_left = -187.0
+offset_top = -169.0
+offset_right = 1779.0
+offset_bottom = 1797.0
+scale = Vector2(0.0356771, 0.0320377)
+tooltip_text = "Nature"
+texture = ExtResource("14_ukgwx")
+
+[node name="SecondaryIcon" type="Node2D" parent="MonsterIcons"]
+position = Vector2(960, 376)
+scale = Vector2(1.76369, 1.76369)
+
+[node name="WATER" type="TextureRect" parent="MonsterIcons/SecondaryIcon"]
+visible = false
+offset_left = -190.0
+offset_top = -183.0
+offset_right = 1776.0
+offset_bottom = 1783.0
+scale = Vector2(0.0404366, 0.0378162)
+tooltip_text = "Water"
+texture = ExtResource("5_vawco")
+
+[node name="FIRE" type="TextureRect" parent="MonsterIcons/SecondaryIcon"]
+visible = false
+offset_left = -193.0
+offset_top = -186.0
+offset_right = 1773.0
+offset_bottom = 1780.0
+scale = Vector2(0.0422327, 0.0405568)
+tooltip_text = "Fire"
+texture = ExtResource("6_4hehq")
+
+[node name="POISON" type="TextureRect" parent="MonsterIcons/SecondaryIcon"]
+visible = false
+offset_left = -197.0
+offset_top = -174.0
+offset_right = 1769.0
+offset_bottom = 1792.0
+scale = Vector2(0.0445942, 0.0391277)
+tooltip_text = "Poison"
+texture = ExtResource("7_7mgl6")
+
+[node name="ICE" type="TextureRect" parent="MonsterIcons/SecondaryIcon"]
+visible = false
+offset_left = -192.0
+offset_top = -178.0
+offset_right = 1774.0
+offset_bottom = 1788.0
+scale = Vector2(0.0382749, 0.0377697)
+tooltip_text = "Ice"
+texture = ExtResource("8_co2ta")
+
+[node name="LIGHTNING" type="TextureRect" parent="MonsterIcons/SecondaryIcon"]
+visible = false
+offset_left = -199.0
+offset_top = -189.0
+offset_right = 1767.0
+offset_bottom = 1777.0
+scale = Vector2(0.0455611, 0.0482571)
+tooltip_text = "Lightning"
+texture = ExtResource("9_2vxao")
+
+[node name="DARK" type="TextureRect" parent="MonsterIcons/SecondaryIcon"]
+visible = false
+offset_left = -201.0
+offset_top = -185.0
+offset_right = 1765.0
+offset_bottom = 1781.0
+scale = Vector2(0.0437176, 0.0448187)
+tooltip_text = "Dark"
+texture = ExtResource("10_xtao3")
+
+[node name="LIGHT" type="TextureRect" parent="MonsterIcons/SecondaryIcon"]
+visible = false
+offset_left = -188.0
+offset_top = -177.0
+offset_right = 1778.0
+offset_bottom = 1789.0
+scale = Vector2(0.037981, 0.036621)
+tooltip_text = "Light"
+texture = ExtResource("11_od36y")
+
+[node name="WIND" type="TextureRect" parent="MonsterIcons/SecondaryIcon"]
+visible = false
+offset_left = -192.0
+offset_top = -181.0
+offset_right = 1774.0
+offset_bottom = 1785.0
+scale = Vector2(0.0392748, 0.0430299)
+tooltip_text = "Wind"
+texture = ExtResource("12_ddr0i")
+
+[node name="ROCK" type="TextureRect" parent="MonsterIcons/SecondaryIcon"]
+visible = false
+offset_left = -188.0
+offset_top = -166.0
+offset_right = 1778.0
+offset_bottom = 1800.0
+scale = Vector2(0.0378922, 0.0275868)
+tooltip_text = "Rock"
+texture = ExtResource("13_0l11p")
+
+[node name="NATURE" type="TextureRect" parent="MonsterIcons/SecondaryIcon"]
+visible = false
+offset_left = -187.0
+offset_top = -169.0
+offset_right = 1779.0
+offset_bottom = 1797.0
+scale = Vector2(0.0356771, 0.0320377)
+tooltip_text = "Nature"
+texture = ExtResource("14_ukgwx")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
